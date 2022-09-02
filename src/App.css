@@ -1,0 +1,142 @@
+html,
+#root,
+body,
+.App {
+  text-align: center;
+  background-color: #000000;
+  font-family: "Teko-Bold", sans-serif;
+  margin: 0 0 0 0;
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "MrDafoe";
+  font-weight: 400;
+  src: local("MrDafoe-Regular"),
+    url(./Fonts/MrDafoe-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  src: local("Oswald"),
+    url(./Fonts/Oswald-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Teko";
+  font-weight: 400;
+  src: local("Teko"), url(./Fonts/Teko-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Teko";
+  font-weight: 600;
+  src: local("Teko"), url(./Fonts/Teko-Bold.ttf) format("truetype");
+}
+
+h3 {
+  font-family: "MrDafoe";
+  font-size: 40px;
+  color: #f45f0b;
+  font-weight: 100;
+}
+
+h1 {
+  font-family: "Teko";
+  font-size: 60px;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "Teko";
+  font-size: 50px;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Oswald";
+  font-size: large;
+}
+
+.hp-step1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.hp-step2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.hp-call-to-action-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hp-call-to-action-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.hp-form-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.hp-about {
+  display: inline-block;
+  align-content: center;
+}
+
+.hp-step1-left-panel {
+  display: inline-block;
+  align-content: center;
+}
+
+.hp-step1-right-panel-image-wrapper {
+  background-image: url("https://i.postimg.cc/D024HHc9/class-style.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hp-step2-left-panel-image-wrapper {
+  background-image: url("https://i.postimg.cc/D024HHc9/class-style.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hp-form-left-panel {
+  background-image: url("https://i.postimg.cc/TwBYqmWK/about-line.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hp-banner-wrapper {
+  background-image: url("https://i.postimg.cc/rm2rCKRF/hero-dance.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hp-call-to-action-right-panel {
+  background-image: url("https://i.postimg.cc/4xMxXFzh/home-cta.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hp-steps-wrapper {
+  display: inline-block;
+  align-content: center;
+}
+
+.hp-card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hp-form {
+  display: inline-block;
+  align-content: center;
+}
