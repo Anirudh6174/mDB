@@ -7,6 +7,7 @@ import Featured from "./components/Featured";
 import Form from "./components/Form";
 import SliderRevo from "./components/SliderRevo";
 import Steps from "./components/Steps";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

@@ -6,7 +6,7 @@ body,
   background-color: #000000;
   font-family: "Teko-Bold", sans-serif;
   margin: 0 0 0 0;
-  color: #ffffff;
+  color: rgb(232, 230, 227);
 }
 
 @font-face {
@@ -50,13 +50,14 @@ h1 {
 
 h2 {
   font-family: "Teko";
-  font-size: 50px;
+  font-size: 80px;
   font-weight: 500;
 }
 
 p {
   font-family: "Oswald";
   font-size: large;
+  color: rgb(210, 206, 200);
 }
 
 .hp-step1 {
@@ -64,9 +65,18 @@ p {
   flex-direction: row;
 }
 
+.hp-step1-left-panel-heading {
+  margin-bottom: 50px;
+}
+
 .hp-step2 {
   display: flex;
   flex-direction: row;
+}
+
+.hp-call-to-action {
+  display: inline-block;
+  align-items: center;
 }
 
 .hp-call-to-action-wrapper {
@@ -89,11 +99,36 @@ p {
 .hp-about {
   display: inline-block;
   align-content: center;
+  margin-top: 40px;
+}
+
+.hp-about-h3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hp-about-steps-h3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hp-steps {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .hp-step1-left-panel {
-  display: inline-block;
-  align-content: center;
+  margin: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 150px;
+  text-align: left;
+}
+
+.hp-step1-left-panel-details {
+  margin-top: 100px;
+  text-align: left;
 }
 
 .hp-step1-right-panel-image-wrapper {
@@ -108,6 +143,27 @@ p {
   background-position: center;
 }
 
+.hp-step2-right-panel {
+  margin: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 150px;
+  text-align: left;
+}
+
+.hp-step2-right-panel-heading {
+  margin: 50px 0 50px 0;
+}
+
+.hp-step2-right-panel-subheading {
+  margin-bottom: 50px;
+}
+
+.hp-step2-right-panel-details {
+  margin: 50px 0 90px 0;
+}
+
 .hp-form-left-panel {
   background-image: url("https://i.postimg.cc/TwBYqmWK/about-line.png");
   background-repeat: no-repeat;
@@ -118,6 +174,12 @@ p {
   background-image: url("https://i.postimg.cc/rm2rCKRF/hero-dance.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.hp-call-to-action-left-panel {
+  margin: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .hp-call-to-action-right-panel {
@@ -139,4 +201,44 @@ p {
 .hp-form {
   display: inline-block;
   align-content: center;
+}
+
+.hp-call-to-action-button-wrapper {
+  margin: 50px 0 50px 0;
+}
+
+.hp-call-to-action-button {
+  margin: 50px 0 0px 0;
+}
+
+/* Slider code SliderRevo */
+
+.sr-fixedheight {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 150px;
+}
+
+.sr-leftcomp {
+  max-width: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.sr-leftcomp-sub-legendText {
+  color: #9d6439;
+  text-align: left;
+}
+
+.sr-legendText {
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+.sr-sliderhard {
+  display: flex;
 }

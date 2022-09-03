@@ -25,7 +25,7 @@ function Categories() {
           <Card>
             <Card.Img
               variant="top"
-              src="https://i.postimg.cc/05ML6Dbp/ADHRIT-2.jpg"
+              src="https://i.postimg.cc/Y0khTkPR/Ekaterina_(1).jpg"
             />
             <Card.Body>
               <Card.Title>Anchor</Card.Title>
@@ -38,7 +38,7 @@ function Categories() {
           <Card>
             <Card.Img
               variant="top"
-              src="https://i.postimg.cc/05ML6Dbp/ADHRIT-2.jpg"
+              src="https://i.postimg.cc/rFWLKbfG/Paritosh_Tonk__(15).jpg"
             />
             <Card.Body>
               <Card.Title>DJ</Card.Title>
@@ -64,7 +64,7 @@ function Categories() {
           <Card>
             <Card.Img
               variant="top"
-              src="https://i.postimg.cc/05ML6Dbp/ADHRIT-2.jpg"
+              src="https://yt3.ggpht.com/Fm0_cT8zmC9TyId4YQmE-vVl_t4MBINIZog4UjV00Wn_9Jt-P7Z1K8i-Glv43rXXA6DzwXuH=s900-c-k-c0x00ffffff-no-rj"
             />
             <Card.Body>
               <Card.Title>Classical Singer</Card.Title>
@@ -77,7 +77,7 @@ function Categories() {
           <Card>
             <Card.Img
               variant="top"
-              src="https://i.postimg.cc/05ML6Dbp/ADHRIT-2.jpg"
+              src="https://i.postimg.cc/6pmLnH5t/Seasons_(2).jpg"
             />
             <Card.Body>
               <Card.Title>Magician</Card.Title>

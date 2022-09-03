@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 function CallToAction() {
   return (
@@ -7,8 +8,12 @@ function CallToAction() {
         <div className="hp-call-to-action-left-panel">
           <h1>ARE YOU A BUISNESS OWNER OR CORPORATE?</h1>
           <div className="hp-call-to-action-button-wrapper">
-            <button>Business owners click here</button>
-            <button>Corporates click here</button>
+            <Button className="hp-call-to-action-button">
+              Business owners click here
+            </Button>
+            <Button className="hp-call-to-action-button">
+              Corporates click here
+            </Button>
           </div>
         </div>
         <div className="hp-call-to-action-right-panel">
