@@ -15,7 +15,9 @@ function Featured() {
             Our AI Engine automatically searches for the top performing artists
             in your locality
           </p>
-          <Button>View All</Button>
+          <Button variant="warning" size="lg">
+            View All
+          </Button>
         </Col>
         <Col>
           <img src="https://i.postimg.cc/05ML6Dbp/ADHRIT-2.jpg" alt="" />

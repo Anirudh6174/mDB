@@ -17,6 +17,13 @@ body,
 }
 
 @font-face {
+  font-family: "Poppins";
+  font-weight: 800;
+  src: local("Poppins-ExtraBold"),
+    url(./Fonts/Poppins-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "Oswald";
   font-weight: 400;
   src: local("Oswald"),
@@ -37,21 +44,22 @@ body,
 
 h3 {
   font-family: "MrDafoe";
-  font-size: 40px;
+  font-size: 40px !important;
   color: #f45f0b;
   font-weight: 100;
 }
 
 h1 {
   font-family: "Teko";
-  font-size: 60px;
-  font-weight: 500;
+  font-size: 60px !important;
+  font-weight: 550 !important;
+  color: #ffffff !important;
 }
 
 h2 {
   font-family: "Teko";
-  font-size: 80px;
-  font-weight: 500;
+  font-size: 50px !important;
+  font-weight: 600 !important;
 }
 
 p {
@@ -77,12 +85,14 @@ p {
 .hp-call-to-action {
   display: inline-block;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .hp-call-to-action-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .hp-call-to-action-button-wrapper {
@@ -109,12 +119,12 @@ p {
 
 .hp-about-steps-h3 {
   margin-top: 40px;
-  margin-bottom: 40px;
+  padding-top: 50px;
 }
 
 .hp-steps {
   margin-top: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .hp-step1-left-panel {
@@ -127,7 +137,7 @@ p {
 }
 
 .hp-step1-left-panel-details {
-  margin-top: 100px;
+  margin-top: 70px;
   text-align: left;
 }
 
@@ -164,10 +174,24 @@ p {
   margin: 50px 0 90px 0;
 }
 
+.hp-step2-right-panel-button-wrapper {
+  display: inline-block;
+  align-self: center;
+}
+
+.hp-categories {
+  padding-top: 10px;
+}
+
 .hp-form-left-panel {
   background-image: url("https://i.postimg.cc/TwBYqmWK/about-line.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.hp-banner {
+  padding-top: 75px;
+  padding-bottom: 50px;
 }
 
 .hp-banner-wrapper {
@@ -201,6 +225,7 @@ p {
 .hp-form {
   display: inline-block;
   align-content: center;
+  padding-top: 40px;
 }
 
 .hp-call-to-action-button-wrapper {
@@ -217,28 +242,149 @@ p {
   min-height: 70vh;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  padding: 150px;
+  justify-content: center;
 }
 
 .sr-leftcomp {
-  max-width: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100%;
+  max-height: 70vh;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
 }
 
 .sr-leftcomp-sub-legendText {
   color: #9d6439;
   text-align: left;
+  font-family: "Poppins" !important;
+  font-size: 30px !important;
+  text-transform: uppercase;
 }
 
 .sr-legendText {
-  font-size: 72px;
+  font-size: 75px !important;
   text-transform: uppercase;
+  text-align: left;
+  line-height: 0.8;
+  padding: 5px;
+  font-family: "Poppins";
 }
 
 .sr-sliderhard {
   display: flex;
+}
+
+.sr-leftCol {
+  /* max-height: 400px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.sr-rightCol {
+  max-height: 600px;
+}
+
+.sr-bookBtn {
+  background-color: #00000080 !important;
+  color: white !important;
+  border-radius: 25px !important ;
+  max-width: 300px;
+  padding: 10px !important;
+  margin-top: 20px !important;
+  font-family: "Poppins";
+}
+
+.sr-imgBox {
+  align-self: flex-end;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+}
+
+.sr-smallbannerimages {
+  max-height: 300px;
+  max-width: 200px;
+  transform: rotate(30deg) !important;
+}
+
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(2);
+  }
+  50% {
+    transform: translateY(-55px);
+  }
+  100% {
+    transform: translateY(1);
+  }
+}
+
+.bounce-3 {
+  animation-name: bounce-3;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-3 {
+  0% {
+    transform: translateX(2);
+  }
+  50% {
+    transform: translateX(55px);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
+
+.react-reveal {
+  height: 80vh;
+  animation-fill-mode: both;
+  animation-duration: 2300ms !important;
+  animation-delay: 5ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-120806506758413-1;
+}
+
+.sr-smallbannerimages-slide1-item2 {
+  transform: rotate(15deg) !important;
+}
+
+.sr-smallbannerimages-slide1-item4 {
+  transform: rotate(-35deg) !important;
+}
+
+.sr-smallbannerimages-slide2-item1 {
+  transform: rotate(-25deg) !important;
+}
+
+.sr-smallbannerimages-slide2-item4 {
+  transform: rotate(0deg) !important;
+}
+
+.sr-smallbannerimages-slide2-item5 {
+  transform: rotate(0deg) !important;
+}
+
+.sr-smallbannerimages-slide2-item6 {
+  transform: rotate(0deg) !important;
+}
+
+.sr-smallbannerimages-slide3-item1 {
+  transform: rotate(0deg) !important;
+}
+
+.sr-smallbannerimages-slide3-item3 {
+  transform: rotate(0deg) !important;
+}
+
+.sr-smallbannerimages-slide3-item2 {
+  transform: rotate(0deg) !important;
 }

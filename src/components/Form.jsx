@@ -10,7 +10,7 @@ function Form() {
           <img src="https://i.postimg.cc/jdSJXV2N/class03.png" alt="" />
         </div>
         <div className="hp-form-right-panel">
-          <h1>CALLBACK FORM</h1>
+          <h1>QUICK CALLBACK</h1>
           <span className="p-float-label">
             <InputText id="username" onChange={(e) => console.log(e)} />
             <label htmlFor="username">Name</label>

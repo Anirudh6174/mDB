@@ -6,13 +6,24 @@ function CallToAction() {
     <div className="hp-call-to-action">
       <div className="hp-call-to-action-wrapper">
         <div className="hp-call-to-action-left-panel">
-          <h1>ARE YOU A BUISNESS OWNER OR CORPORATE?</h1>
+          <h1>
+            ARE YOU A BUSINESS <br />
+            OWNER OR CORPORATE?
+          </h1>
           <div className="hp-call-to-action-button-wrapper">
-            <Button className="hp-call-to-action-button">
-              Business owners click here
+            <Button
+              className="hp-call-to-action-button"
+              variant="outline-warning"
+              size="lg"
+            >
+              BUSINESS OWNERS CLICK HERE
             </Button>
-            <Button className="hp-call-to-action-button">
-              Corporates click here
+            <Button
+              className="hp-call-to-action-button"
+              variant="outline-warning"
+              size="lg"
+            >
+              CORPORATES CLICK HERE
             </Button>
           </div>
         </div>
