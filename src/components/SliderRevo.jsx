@@ -84,11 +84,13 @@ export default function SliderRevo() {
               </Col>
               <Col sm={5} className="sr-rightCol">
                 <Bounce left>
-                  <img
-                    className="slide1-hero"
-                    src="https://i.postimg.cc/XvrvBcg2/png-20220720-080903-0000-768x1086.png"
-                    alt=""
-                  ></img>
+                  <div className="slide1-hero-wrapper">
+                    <img
+                      className="slide1-hero"
+                      src="https://i.postimg.cc/XvrvBcg2/png-20220720-080903-0000-768x1086.png"
+                      alt=""
+                    ></img>
+                  </div>
                 </Bounce>
               </Col>
             </Row>

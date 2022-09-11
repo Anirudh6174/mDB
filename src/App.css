@@ -666,4 +666,168 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+  .sr-fixedheight {
+    min-height: 100vh;
+  }
+  .sr-smallbannerimages {
+    max-height: 100px !important;
+    max-width: 80px !important;
+  }
+  .slide1-item1 {
+    left: 175px;
+  }
+  .slide1-img1 {
+    height: 200px;
+    width: 160px;
+  }
+  .slide1-item2 {
+    left: 295px;
+    top: 260px;
+  }
+
+  .slide1-img2 {
+    height: 100px;
+    width: 100px;
+  }
+  .slide1-item3 {
+    bottom: 50px;
+    right: 600px;
+    top: 200px;
+  }
+
+  .slide1-img3 {
+    height: 240px;
+    width: 200px;
+  }
+  .slide1-item4 {
+    bottom: 10px;
+    right: 700px;
+    top: 40px;
+  }
+
+  .slide1-img4 {
+    height: 200px;
+    width: 160px;
+  }
+  .slide2-item1 {
+    top: 50px;
+    right: 150px;
+  }
+
+  .slide2-img1 {
+    height: 200px;
+    width: 110px;
+  }
+  .slide2-item2 {
+    bottom: 50px;
+    right: 500px;
+    top: 500px;
+  }
+
+  .slide2-img2 {
+    height: 140px;
+    width: 70px;
+  }
+  .slide2-item4 {
+    bottom: 10px;
+    right: 150px;
+    top: 500px;
+  }
+
+  .slide2-img4 {
+    height: 140px;
+    width: 100px;
+  }
+  .slide2-item5 {
+    bottom: 10px;
+    right: 700px;
+    top: 100px;
+  }
+
+  .slide2-img5 {
+    height: 300px;
+    width: 230px;
+  }
+  .slide2-item6 {
+    bottom: 10px;
+    right: 850px;
+    top: 440px;
+  }
+
+  .slide2-img6 {
+    height: 200px;
+    width: 140px;
+  }
+  .slide3-item1 {
+    left: -80px;
+    top: 20px;
+  }
+
+  .slide3-img1 {
+    height: 380px;
+    width: 250px;
+  }
+  .slide3-item2 {
+    bottom: 50px;
+    right: 150px;
+    top: 70px;
+  }
+
+  .slide3-img2 {
+    height: 150px;
+    width: 80px;
+  }
+  .slide3-item3 {
+    bottom: 10px;
+    right: 800px;
+    top: 50px;
+  }
+
+  .slide3-img3 {
+    height: 200px;
+    width: 140px;
+  }
+  .slide4-item1 {
+    left: 250px;
+    top: 25px;
+  }
+
+  .slide4-img1 {
+    height: 140px;
+    width: 100px;
+  }
+  .slide4-item2 {
+    bottom: 50px;
+    right: 700px;
+    top: 60px;
+  }
+
+  .slide4-img2 {
+    height: 180px;
+    width: 160px;
+  }
+
+  .slide4-item3 {
+    bottom: 10px;
+    right: 400px;
+    top: 100px;
+  }
+
+  .slide4-img3 {
+    height: 100px;
+    width: 80px;
+  }
+  .sr-rightCol {
+    max-height: 600px;
+    width: auto;
+  }
+  .slide1-hero {
+    top: 100px;
+    bottom: 300px;
+  }
+  .slide1-hero-wrapper {
+    bottom: 100px;
+    right: 800px;
+    top: 50px;
+  }
 }
