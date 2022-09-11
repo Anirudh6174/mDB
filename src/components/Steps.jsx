@@ -11,7 +11,7 @@ function Steps() {
             <br />
             <p>SELECT YOUR ARTIST</p>
             <h2>
-              CHOOSE YOUR ARTIST
+              CHOOSE ARTIST
               <br />
               TYPE, LOCATION, DATE <br />
               AND BUDGET
@@ -26,7 +26,7 @@ function Steps() {
             <div className="hp-step1-right-panel-image-wrapper">
               <img
                 className="hp-step1-right-panel-image"
-                src="https://i.postimg.cc/HkDVV3jc/png-20220716-220152-0000.png"
+                src="https://i.postimg.cc/KzCtkrPS/png-20220716-220152-0000.png"
                 alt=""
               />
             </div>
@@ -35,13 +35,13 @@ function Steps() {
         <div className="hp-step2">
           <div className="hp-step2-left-panel-image-wrapper">
             <img
+              className="hp-step2-left-panel-image"
               src="https://i.postimg.cc/vTxZm6st/png-20220720-084117-0000.png"
               alt=""
             />
           </div>
           <div className="hp-step2-right-panel">
             <h2 className="hp-step2-right-panel-heading">STEP 2</h2>
-
             <h2 className="hp-step2-right-panel-subheading">
               EXPLORE VERIFIED <br />
               RESULTS AND BOOK
@@ -54,9 +54,13 @@ function Steps() {
               experience!
             </p>
             <div className="hp-step2-right-panel-button-wrapper">
-              <Button variant="outline-warning " size="lg">
-                BOOK NOW
-              </Button>
+              <button
+                variant="outline-warning"
+                className="step-orangeBtn"
+                href="/bookartist"
+              >
+                BOOK NOW <i className="pi pi-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>

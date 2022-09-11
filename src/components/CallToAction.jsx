@@ -11,24 +11,19 @@ function CallToAction() {
             OWNER OR CORPORATE?
           </h1>
           <div className="hp-call-to-action-button-wrapper">
-            <Button
-              className="hp-call-to-action-button"
-              variant="outline-warning"
-              size="lg"
-            >
+            <button className="step-orangeBtn" href="/bookartist">
               BUSINESS OWNERS CLICK HERE
-            </Button>
-            <Button
-              className="hp-call-to-action-button"
-              variant="outline-warning"
-              size="lg"
-            >
+            </button>
+            <button className="step-orangeBtn" href="/bookartist">
               CORPORATES CLICK HERE
-            </Button>
+            </button>
           </div>
         </div>
         <div className="hp-call-to-action-right-panel">
-          <img src="https://i.postimg.cc/Pf4wYfXT/class05.png" alt="" />
+          <img
+            src="https://i.postimg.cc/tCMBkJR7/png-20220720-084654-0000.png"
+            alt=""
+          />
         </div>
       </div>
     </div>

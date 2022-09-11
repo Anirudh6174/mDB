@@ -1,0 +1,52 @@
+.artist_page {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  top: 80px;
+  flex: 0.2;
+  border-radius: 10px;
+  text-align: center;
+  height: fit-content;
+}
+
+.sidebar_left {
+  display: flex;
+  flex: 0.4;
+  flex-direction: column;
+  align-items: left;
+  border: 1px solid lightgray;
+  border-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  max-width: 250px;
+}
+
+.gallery_right {
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+}
+
+.sidebar_left > img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  align-self: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  padding: 5px;
+}
+
+.video_gallery {
+  padding: 80px;
+}
+
+.image_gallery {
+  padding: 80px;
+}
+
+.bio {
+  padding: 80px;
+}

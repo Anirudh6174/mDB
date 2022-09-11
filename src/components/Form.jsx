@@ -7,7 +7,7 @@ function Form() {
     <div className="hp-form">
       <div className="hp-form-wrapper">
         <div className="hp-form-left-panel">
-          <img src="https://i.postimg.cc/jdSJXV2N/class03.png" alt="" />
+          <img src="" alt="" />
         </div>
         <div className="hp-form-right-panel">
           <h1>QUICK CALLBACK</h1>

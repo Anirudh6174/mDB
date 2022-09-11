@@ -19,82 +19,41 @@ export default function SliderRevo() {
           <Container>
             {/* Background Images */}
             <Bounce left>
-              <div
-                className="sr-smallbannerimages "
-                style={{
-                  marginLeft: "50%",
-                  position: "absolute",
-                  left: "295px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide1-item1 ">
                 <img
                   src="https://i.postimg.cc/HkXfxNmc/20220720-081220-0000-724x1024.png"
                   alt=""
-                  className="sr-imgBox bounce-2"
-                  height={240}
-                  width={200}
+                  className="sr-imgBox bounce-2 slide1-img1"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages-slide1-item2"
-                style={{
-                  marginLeft: "50%",
-                  position: "absolute",
-                  left: "495px",
-                  top: "250px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide1-item2">
                 <img
                   src="https://i.postimg.cc/y6fB4267/20220720-081311-0000-724x1024.png"
                   alt=""
-                  className="sr-imgBox bounce-2"
-                  height={200}
-                  width={160}
+                  className="sr-imgBox bounce-2 slide1-img2"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages-slide1-item3"
-                style={{
-                  marginLeft: "40%",
-                  position: "absolute",
-                  bottom: "50px",
-                  right: "1050px",
-                  top: "400px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide1-item3">
                 <img
                   src="https://i.postimg.cc/PqNfNyqJ/png-20220720-081050-0000-724x1024.png"
                   alt=""
-                  className="sr-imgBox bounce-3"
-                  height={240}
-                  width={200}
+                  className="sr-imgBox bounce-3 slide1-img3"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages-slide1-item4"
-                style={{
-                  marginLeft: "20%",
-                  position: "absolute",
-                  bottom: "10px",
-                  right: "900px",
-                  top: "40px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide1-item4">
                 <img
                   src="https://i.postimg.cc/C52WBTdD/object-guitar-1-25.png"
                   alt=""
-                  className="sr-imgBox bounce-3"
-                  height={240}
-                  width={200}
+                  className="sr-imgBox bounce-3 slide1-img4"
                 ></img>
               </div>
             </Bounce>
@@ -112,7 +71,12 @@ export default function SliderRevo() {
                         Live Music <br /> Performer
                       </em>
                     </h1>
-                    <Button className="sr-bookBtn" variant="light">
+
+                    <Button
+                      className="sr-bookBtn"
+                      variant="light"
+                      href="/bookartist"
+                    >
                       <b>BOOK YOUR MUSICAL SHOW</b>
                     </Button>
                   </div>
@@ -121,11 +85,9 @@ export default function SliderRevo() {
               <Col sm={5} className="sr-rightCol">
                 <Bounce left>
                   <img
+                    className="slide1-hero"
                     src="https://i.postimg.cc/XvrvBcg2/png-20220720-080903-0000-768x1086.png"
                     alt=""
-                    style={{
-                      height: "80vh",
-                    }}
                   ></img>
                 </Bounce>
               </Col>
@@ -146,105 +108,51 @@ export default function SliderRevo() {
           <Container>
             {/* Background Images */}
             <Bounce left>
-              <div
-                className="sr-smallbannerimages-slide2-item1"
-                style={{
-                  marginLeft: "50%",
-                  position: "absolute",
-                  top: "50px",
-                  right: "250px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide2-item1">
                 <img
                   src="https://i.postimg.cc/268J08Zh/20220720-082731-0000-724x1024.png"
                   alt=""
-                  className="sr-imgBox bounce-2"
-                  height={240}
-                  width={150}
+                  className="sr-imgBox bounce-2 slide2-img1"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages"
-                style={{
-                  marginLeft: "40%",
-                  position: "absolute",
-                  bottom: "50px",
-                  right: "1050px",
-                  top: "500px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide2-item2">
                 <img
                   src="https://i.postimg.cc/VvzNGtF4/20220720-082236-0000-212x300.png"
                   alt=""
-                  className="sr-imgBox bounce-2"
-                  height={200}
-                  width={100}
+                  className="sr-imgBox bounce-2 slide2-img2"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages-slide2-item4"
-                style={{
-                  marginLeft: "20%",
-                  position: "absolute",
-                  bottom: "10px",
-                  right: "300px",
-                  top: "500px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide2-item4">
                 <img
                   src="https://i.postimg.cc/sgQ5SYx6/20220720-081639-0000-212x300.png"
                   alt=""
-                  className="sr-imgBox bounce-3"
-                  height={200}
-                  width={160}
+                  className="sr-imgBox bounce-3 slide2-img4"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages-slide2-item5"
-                style={{
-                  marginLeft: "20%",
-                  position: "absolute",
-                  bottom: "10px",
-                  right: "1250px",
-                  top: "100px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide2-item5">
                 <img
                   src="https://i.postimg.cc/xdZRV256/20220720-082949-0000-724x1024.png"
                   alt=""
-                  className="sr-imgBox bounce-2"
-                  height={300}
-                  width={230}
+                  className="sr-imgBox bounce-2 slide2-img5"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages-slide2-item6"
-                style={{
-                  marginLeft: "20%",
-                  position: "absolute",
-                  bottom: "10px",
-                  right: "1350px",
-                  top: "500px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide2-item6">
                 <img
                   src="https://i.postimg.cc/BQshpvf6/png-20220720-082830-0000-724x1024.png"
                   alt=""
-                  className="sr-imgBox bounce-3"
-                  height={200}
-                  width={140}
+                  className="sr-imgBox bounce-3 slide2-img6"
                 ></img>
               </div>
             </Bounce>
@@ -262,7 +170,11 @@ export default function SliderRevo() {
                         LIVE STANDUP <br /> COMEDY
                       </em>
                     </h1>
-                    <Button className="sr-bookBtn" variant="light">
+                    <Button
+                      className="sr-bookBtn"
+                      variant="light"
+                      href="/bookartist"
+                    >
                       <b>BOOK YOUR COMEDIAN</b>
                     </Button>
                   </div>
@@ -271,6 +183,7 @@ export default function SliderRevo() {
               <Col sm={5} className="sr-rightCol">
                 <Bounce left>
                   <img
+                    className="slide2-hero"
                     src="https://i.postimg.cc/wvx0kM7b/11111.png"
                     alt=""
                     style={
@@ -298,63 +211,31 @@ export default function SliderRevo() {
           <Container>
             {/* Background Images */}
             <Bounce left>
-              <div
-                className="sr-smallbannerimages-slide3-item1"
-                style={{
-                  marginLeft: "50%",
-                  position: "absolute",
-                  left: "-80px",
-                  top: "20px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide3-item1">
                 <img
                   src="https://i.postimg.cc/dVCL0JD2/png-20220720-083732-0000-768x1086.png"
                   alt=""
-                  className="sr-imgBox bounce-2"
-                  height={480}
-                  width={350}
+                  className="sr-imgBox bounce-2 slide3-img1"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages-slide3-item2"
-                style={{
-                  marginLeft: "40%",
-                  position: "absolute",
-                  bottom: "50px",
-                  right: "250px",
-                  top: "70px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide3-item2">
                 <img
                   src="https://i.postimg.cc/wxDfDmPZ/png-20220720-083327-0000-212x300.png"
                   alt=""
-                  className="sr-imgBox bounce-3"
-                  height={200}
-                  width={130}
+                  className="sr-imgBox bounce-3 slide3-img2"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages-slide3-item3"
-                style={{
-                  marginLeft: "20%",
-                  position: "absolute",
-                  bottom: "10px",
-                  right: "1300px",
-                  top: "50px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide3-item3">
                 <img
                   src="https://i.postimg.cc/7LCXhG0B/png-20220720-083401-0000-212x300.png"
                   alt=""
-                  className="sr-imgBox bounce-3"
-                  height={200}
-                  width={140}
+                  className="sr-imgBox bounce-3 slide3-img3"
                 ></img>
               </div>
             </Bounce>
@@ -373,7 +254,12 @@ export default function SliderRevo() {
                         <br /> SHOW
                       </em>
                     </h1>
-                    <Button className="sr-bookBtn" variant="light">
+
+                    <Button
+                      className="sr-bookBtn"
+                      variant="light"
+                      href="/bookartist"
+                    >
                       <b>GET YOUR MAGIC SHOW</b>
                     </Button>
                   </div>
@@ -382,7 +268,8 @@ export default function SliderRevo() {
               <Col sm={5} className="sr-rightCol">
                 <Bounce left>
                   <img
-                    src="https://i.postimg.cc/fW8gBGng/png-20220720-083216-0000.png"
+                    className="slide3-hero"
+                    src="https://i.postimg.cc/bwY8KBp5/png-20220720-083216-0000-1086x1536.png"
                     alt=""
                     style={{
                       height: "70vh",
@@ -407,63 +294,31 @@ export default function SliderRevo() {
           <Container>
             {/* Background Images */}
             <Bounce left>
-              <div
-                className="sr-smallbannerimages"
-                style={{
-                  marginLeft: "50%",
-                  position: "absolute",
-                  left: "350px",
-                  top: "15px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide4-item1">
                 <img
                   src="https://i.postimg.cc/brnKtVnB/png-20220720-082327-0000-724x1024.png"
                   alt=""
-                  className="sr-imgBox bounce-2"
-                  height={140}
-                  width={100}
+                  className="sr-imgBox bounce-2 slide4-img1"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages"
-                style={{
-                  marginLeft: "40%",
-                  position: "absolute",
-                  bottom: "50px",
-                  right: "600px",
-                  top: "60px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide4-item2">
                 <img
                   src="https://i.postimg.cc/59ZJ2Lzr/object-turntable-1-50.png"
                   alt=""
-                  className="sr-imgBox bounce-2"
-                  height={240}
-                  width={200}
+                  className="sr-imgBox bounce-2 slide4-img2"
                 ></img>
               </div>
             </Bounce>
 
             <Bounce left>
-              <div
-                className="sr-smallbannerimages"
-                style={{
-                  marginLeft: "20%",
-                  position: "absolute",
-                  bottom: "10px",
-                  right: "1050px",
-                  top: "150px",
-                }}
-              >
+              <div className="sr-smallbannerimages slide4-item3">
                 <img
                   src="https://i.postimg.cc/HLtR07VT/object-vinyl-1-25.png"
                   alt=""
-                  className="sr-imgBox bounce-2"
-                  height={140}
-                  width={100}
+                  className="sr-imgBox bounce-2 slide4-img3"
                 ></img>
               </div>
             </Bounce>
@@ -481,15 +336,22 @@ export default function SliderRevo() {
                         MUCH MUCH <br /> MORE
                       </em>
                     </h1>
-                    <Button className="sr-bookBtn" variant="light">
-                      <b>CHECK OUR TOP CATEGORIES</b>
-                    </Button>
+                    <a href="/bookartist">
+                      <Button
+                        className="sr-bookBtn"
+                        variant="light"
+                        href="/bookartist"
+                      >
+                        <b>CHECK OUR TOP CATEGORIES</b>
+                      </Button>
+                    </a>
                   </div>
                 </Bounce>
               </Col>
               <Col sm={2} className="sr-rightCol-image3">
                 <Bounce left>
                   <img
+                    className="slide4-hero"
                     src="https://i.postimg.cc/FRVSKVpY/New-DJ.png"
                     alt=""
                     style={
@@ -504,6 +366,7 @@ export default function SliderRevo() {
               <Col sm={3} className="sr-rightCol sr-imgBox bounce-3">
                 <Bounce left>
                   <img
+                    className="slide4-hero"
                     src="https://i.postimg.cc/FRHr0vFn/png-20220720-084852-0000-768x1086.png"
                     alt=""
                     style={
@@ -518,6 +381,7 @@ export default function SliderRevo() {
               <Col sm={3} className="sr-rightCol sr-imgBox bounce-3">
                 <Bounce left>
                   <img
+                    className="slide4-hero"
                     src="https://i.postimg.cc/Y21JRGnb/20220805-102449-0000.png"
                     alt=""
                     style={

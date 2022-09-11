@@ -1,25 +1,20 @@
 import "./App.css";
-import About from "./components/About";
-import Banner from "./components/Banner";
-import CallToAction from "./components/CallToAction";
-import Categories from "./components/Categories";
-import Featured from "./components/Featured";
-import Form from "./components/Form";
-import SliderRevo from "./components/SliderRevo";
-import Steps from "./components/Steps";
+import "./Appx.css";
+import Main from "./Main";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SearchPage from "./components/SearchPage";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "primeicons/primeicons.css";
 
 function App() {
   return (
     <>
-      <SliderRevo />
-      <About />
-      <Steps />
-      <Categories />
-      <CallToAction />
-      <Featured />
-      <Banner />
-      <Form />
+      <Router basename={process.env.PUBLIC_URL}>
+        <Switch>
+          <Route path="/" exact component={Main}></Route>
+          <Route path="/bookartist" exact component={SearchPage}></Route>
+        </Switch>
+      </Router>
     </>
   );
 }
