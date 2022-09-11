@@ -817,17 +817,21 @@ p {
     height: 100px;
     width: 80px;
   }
-  .sr-rightCol {
-    max-height: 600px;
-    width: auto;
+
+  /* .slide1-item5-main {
+    bottom: 10px;
+    left: 150px;
   }
-  .slide1-hero {
-    top: 100px;
-    bottom: 300px;
+  .slide1-img5-main {
+    height: 500px;
+    width: 400px;
+  } */
+  .slide1-item5-main {
+    bottom: 10px;
+    left: 150px;
   }
-  .slide1-hero-wrapper {
-    bottom: 100px;
-    right: 800px;
-    top: 50px;
+  .slide1-img5-main {
+    height: 500px;
+    width: 400px;
   }
 }

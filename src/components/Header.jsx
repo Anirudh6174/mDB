@@ -18,7 +18,7 @@ export default function Header() {
         variant="dark"
       >
         <Container>
-          <Navbar.Brand href="/">My Durbar</Navbar.Brand>
+          <Navbar.Brand href="/">myDurbar</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -27,9 +27,9 @@ export default function Header() {
             </Nav>
             <Nav>
               <Nav.Link href="/">Contact US</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
+              {/* <Nav.Link eventKey={2} href="#memes">
                 Terms & Conditions
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

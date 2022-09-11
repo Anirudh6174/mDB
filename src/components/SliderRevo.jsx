@@ -58,6 +58,16 @@ export default function SliderRevo() {
               </div>
             </Bounce>
 
+            {/* <Bounce left>
+              <div className="slide1-item5-main">
+                <img
+                  src="https://i.postimg.cc/Kz2LbRN3/png-20220720-080903-0000-768x1086.png"
+                  alt=""
+                  className="sr-imgBox bounce-3 slide1-img5-main"
+                ></img>
+              </div>
+            </Bounce> */}
+
             {/* Main content */}
             <Row className="sr-leftcomp">
               <Col sm={5}>

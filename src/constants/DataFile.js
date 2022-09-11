@@ -108,7 +108,7 @@ export const questions = [
       {
         id: 5,
         value: 50000,
-        label: "Above ₹50000",
+        label: "Upto ₹50000",
       },
     ],
   },
