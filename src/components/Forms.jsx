@@ -34,7 +34,7 @@ function Forms() {
       <div className="hp-form-wrapper">
         <div className="hp-form-left-panel">
           <img
-            className="hp-form-left-panel-image"
+            className="steps-imgbox bounce-6 hp-form-left-panel-image"
             src="https://i.postimg.cc/jdSJXV2N/class03.png"
             alt=""
           />

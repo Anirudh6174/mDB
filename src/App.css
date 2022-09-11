@@ -383,6 +383,64 @@ p {
   }
 }
 
+.steps-imgbox {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+}
+
+.bounce-4 {
+  animation-name: bounce-4;
+  animation-timing-function: ease-in;
+}
+
+@keyframes bounce-4 {
+  0% {
+    transform: translateX(1);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateY(1);
+  }
+}
+
+.bounce-5 {
+  animation-name: bounce-5;
+  animation-timing-function: ease-in;
+}
+
+@keyframes bounce-5 {
+  0% {
+    transform: translateX(-1);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateY(-1);
+  }
+}
+
+.bounce-6 {
+  animation-name: bounce-6;
+  animation-timing-function: ease-in;
+}
+
+@keyframes bounce-6 {
+  0% {
+    transform: translateY(2);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-2);
+  }
+}
+
 .react-reveal {
   height: 80vh;
   animation-fill-mode: both;

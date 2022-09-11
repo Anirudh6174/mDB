@@ -17,6 +17,8 @@ import { InputTextarea } from "primereact/inputtextarea";
 import PopUp from "./PopUp";
 import { Calendar } from "primereact/calendar";
 import { addLocale } from "primereact/api";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ArtistProfile(props) {
   // Creating ref for scrolling into Div
@@ -27,6 +29,30 @@ export default function ArtistProfile(props) {
     var h = document.getElementById(eventKey).clientHeight;
     console.log(h);
     window.scrollTo(0, h);
+  };
+
+  // Email JS for form submission
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_6uu32dr",
+        "template_fkj5uv9",
+        form.current,
+        "DSyAWEFrE_6p_tDmP"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
 
   // Genre List from DataFile
@@ -305,6 +331,8 @@ export default function ArtistProfile(props) {
       {/* Request Revised Quote PopUp */}
       <PopUp showPopUp={showPopUp} />
       <Modal
+        ref={form}
+        onSubmit={sendEmail}
         show={revisedQuotePopUp}
         onHide={() => closeRevised()}
         backdrop="static"
@@ -323,38 +351,59 @@ export default function ArtistProfile(props) {
             Please enter your details and someone will contact you about your
             query
           </p>
+          <form ref={form} onSubmit={sendEmail}>
+            <div>
+              <div className="ap-bookingForm">
+                <span className="p-float-label">
+                  <InputText
+                    name="user_name"
+                    id="user_name"
+                    onChange={(e) => console.log(e)}
+                  />
+                  <label htmlFor="user_name">Name</label>
+                </span>
+                <br />
+                <span className="p-float-label">
+                  <InputText
+                    name="user_email"
+                    id="user_email"
+                    onChange={(e) => console.log(e)}
+                  />
+                  <label htmlFor="user_email">Email</label>
+                </span>
+                <br />
+                <span className="p-float-label">
+                  <InputNumber
+                    name="user_phone"
+                    id="user_phone"
+                    onChange={(e) => console.log(e)}
+                  />
+                  <label htmlFor="user_phone">Phone Number</label>
+                </span>
+                <br />
+                <span className="p-float-label">
+                  <InputNumber
+                    name="user_limit"
+                    id="user_limit"
+                    onChange={(e) => console.log(e)}
+                  />
+                  <label htmlFor="user_limit">Maximum Price Limit</label>
+                </span>
+                <br />
 
-          <div>
-            <div className="ap-bookingForm">
-              <span className="p-float-label">
-                <InputText id="username" onChange={(e) => console.log(e)} />
-                <label htmlFor="username">Name</label>
-              </span>
-              <br />
-              <span className="p-float-label">
-                <InputText id="username" onChange={(e) => console.log(e)} />
-                <label htmlFor="username">Email</label>
-              </span>
-              <br />
-              <span className="p-float-label">
-                <InputNumber id="username" onChange={(e) => console.log(e)} />
-                <label htmlFor="username">Phone Number</label>
-              </span>
-              <br />
-              <span className="p-float-label">
-                <InputNumber id="username" onChange={(e) => console.log(e)} />
-                <label htmlFor="username">Maximum Price Limit</label>
-              </span>
-              <br />
-
-              <br />
-              <div className="ap-actionButtons">
-                <BootStrapBtn variant="dark" onClick={() => handleSubmit()}>
-                  Request Access
-                </BootStrapBtn>
+                <br />
+                <div className="ap-actionButtons">
+                  <BootStrapBtn
+                    variant="dark"
+                    type="submit"
+                    onClick={() => closeRevised()}
+                  >
+                    Request Access
+                  </BootStrapBtn>
+                </div>
               </div>
             </div>
-          </div>
+          </form>
         </Modal.Body>
         <Modal.Footer>
           <BootStrapBtn variant="secondary" onClick={() => closeRevised()}>
