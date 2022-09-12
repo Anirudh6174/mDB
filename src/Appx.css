@@ -483,4 +483,10 @@ body,
     text-align: center;
     color: #ffffff;
   }
+  .ap-details-bio {
+    font-size: 18px;
+  }
+  .sp-card-genre {
+    font-size: 18px;
+  }
 }

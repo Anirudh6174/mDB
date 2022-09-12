@@ -234,7 +234,7 @@ export default function SearchPage() {
                           >
                             {e.category}
                           </Badge>
-                          <p>{e.genre}</p>
+                          <p className="sp-card-genre">{e.genre}</p>
                           <div className="ap-rating">
                             <Rating value={e.rating} cancel={false} stars={5} />
                           </div>
