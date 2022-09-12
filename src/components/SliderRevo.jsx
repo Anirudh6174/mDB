@@ -58,19 +58,9 @@ export default function SliderRevo() {
               </div>
             </Bounce>
 
-            {/* <Bounce left>
-              <div className="slide1-item5-main">
-                <img
-                  src="https://i.postimg.cc/Kz2LbRN3/png-20220720-080903-0000-768x1086.png"
-                  alt=""
-                  className="sr-imgBox bounce-3 slide1-img5-main"
-                ></img>
-              </div>
-            </Bounce> */}
-
             {/* Main content */}
-            <Row className="sr-leftcomp">
-              <Col sm={5}>
+            <div className="sr-leftcomp">
+              <div>
                 <Bounce right>
                   <div className="sr-leftCol">
                     <h2 className="sr-leftcomp-sub-legendText">
@@ -91,19 +81,17 @@ export default function SliderRevo() {
                     </Button>
                   </div>
                 </Bounce>
-              </Col>
-              <Col sm={5} className="sr-rightCol">
+              </div>
+              <div className="sr-rightCol">
                 <Bounce left>
-                  <div className="slide1-hero-wrapper">
-                    <img
-                      className="slide1-hero"
-                      src="https://i.postimg.cc/XvrvBcg2/png-20220720-080903-0000-768x1086.png"
-                      alt=""
-                    ></img>
-                  </div>
+                  <img
+                    className="slide1-hero"
+                    src="https://i.postimg.cc/XvrvBcg2/png-20220720-080903-0000-768x1086.png"
+                    alt=""
+                  ></img>
                 </Bounce>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </Container>
         </div>
       </Carousel.Item>
@@ -170,8 +158,8 @@ export default function SliderRevo() {
             </Bounce>
 
             {/* Main content */}
-            <Row className="sr-leftcomp">
-              <Col sm={6}>
+            <div className="sr-leftcomp">
+              <div>
                 <Bounce right>
                   <div className="sr-leftCol">
                     <h2 className="sr-leftcomp-sub-legendText">
@@ -191,8 +179,8 @@ export default function SliderRevo() {
                     </Button>
                   </div>
                 </Bounce>
-              </Col>
-              <Col sm={5} className="sr-rightCol">
+              </div>
+              <div className="sr-rightCol">
                 <Bounce left>
                   <img
                     className="slide2-hero"
@@ -205,8 +193,8 @@ export default function SliderRevo() {
                     }
                   ></img>
                 </Bounce>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </Container>
         </div>
       </Carousel.Item>
@@ -253,8 +241,8 @@ export default function SliderRevo() {
             </Bounce>
 
             {/* Main content */}
-            <Row className="sr-leftcomp">
-              <Col sm={6}>
+            <div className="sr-leftcomp">
+              <div>
                 <Bounce right>
                   <div className="sr-leftCol">
                     <h2 className="sr-leftcomp-sub-legendText">
@@ -276,20 +264,17 @@ export default function SliderRevo() {
                     </Button>
                   </div>
                 </Bounce>
-              </Col>
-              <Col sm={5} className="sr-rightCol">
+              </div>
+              <div className="sr-rightCol">
                 <Bounce left>
                   <img
                     className="slide3-hero"
                     src="https://i.postimg.cc/bwY8KBp5/png-20220720-083216-0000-1086x1536.png"
                     alt=""
-                    style={{
-                      height: "70vh",
-                    }}
                   ></img>
                 </Bounce>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </Container>
         </div>
       </Carousel.Item>
@@ -336,8 +321,8 @@ export default function SliderRevo() {
             </Bounce>
 
             {/* Main content */}
-            <Row className="sr-leftcomp">
-              <Col sm={3}>
+            <div className="sr-leftcomp">
+              <div>
                 <Bounce right>
                   <div className="sr-leftCol">
                     <h2 className="sr-leftcomp-sub-legendText">
@@ -359,11 +344,11 @@ export default function SliderRevo() {
                     </a>
                   </div>
                 </Bounce>
-              </Col>
-              <Col sm={2} className="sr-rightCol-image3">
+              </div>
+              <div className="sr-rightCol-image3">
                 <Bounce left>
                   <img
-                    className="slide4-hero"
+                    className="slide4-hero1"
                     src="https://i.postimg.cc/FRVSKVpY/New-DJ.png"
                     alt=""
                     style={
@@ -373,12 +358,12 @@ export default function SliderRevo() {
                     }
                   ></img>
                 </Bounce>
-              </Col>
+              </div>
 
-              <Col sm={3} className="sr-rightCol sr-imgBox bounce-3">
+              {/* <div className="sr-rightCol sr-imgBox bounce-3">
                 <Bounce left>
                   <img
-                    className="slide4-hero"
+                    className="slide4-hero2"
                     src="https://i.postimg.cc/FRHr0vFn/png-20220720-084852-0000-768x1086.png"
                     alt=""
                     style={
@@ -388,12 +373,12 @@ export default function SliderRevo() {
                     }
                   ></img>
                 </Bounce>
-              </Col>
+              </div> */}
 
-              <Col sm={3} className="sr-rightCol sr-imgBox bounce-3">
+              {/* <div className="sr-rightCol sr-imgBox bounce-3">
                 <Bounce left>
                   <img
-                    className="slide4-hero"
+                    className="slide4-hero3"
                     src="https://i.postimg.cc/Y21JRGnb/20220805-102449-0000.png"
                     alt=""
                     style={
@@ -403,8 +388,8 @@ export default function SliderRevo() {
                     }
                   ></img>
                 </Bounce>
-              </Col>
-            </Row>
+              </div> */}
+            </div>
           </Container>
         </div>
       </Carousel.Item>

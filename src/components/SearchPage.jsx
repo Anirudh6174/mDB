@@ -138,6 +138,7 @@ export default function SearchPage() {
             </Container>
             {/* Options */}
             <Container
+              className="sp-optionsCard"
               style={{
                 backgroundColor: "#000000",
               }}
@@ -169,7 +170,7 @@ export default function SearchPage() {
                   <Card.Body>
                     {opt?.label === "Choose a date" && (
                       <Calendar
-                        style={{ display: "flex", width: "300px" }}
+                        style={{ display: "flex", width: "500px" }}
                         onChange={(e) => answerClicked(e.value)}
                         inline
                       />

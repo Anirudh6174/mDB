@@ -25,7 +25,7 @@ function Steps() {
           <div className="hp-step1-right-panel">
             <div className="hp-step1-right-panel-image-wrapper">
               <img
-                className="steps-imgbox bounce-4 hp-step1-right-panel-image"
+                className="steps-imgbox bounce-6 hp-step1-right-panel-image"
                 src="https://i.postimg.cc/KzCtkrPS/png-20220716-220152-0000.png"
                 alt=""
               />

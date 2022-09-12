@@ -280,14 +280,16 @@ p {
   min-height: 70vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .sr-leftcomp {
   max-height: 70vh;
-  /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: 100%;
 }
 
 .sr-leftcomp-sub-legendText {
@@ -725,7 +727,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .sr-fixedheight {
-    min-height: 100vh;
+    min-height: 70vh;
   }
   .sr-smallbannerimages {
     max-height: 100px !important;

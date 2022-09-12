@@ -343,7 +343,7 @@ export default function ArtistProfile(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title>
-            Revised Request Quote for {props.selectedArtist.title}
+            Revised Requested Quote for {props.selectedArtist.title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -422,7 +422,6 @@ export default function ArtistProfile(props) {
         backdrop="static"
         variant="dark"
         size="lg"
-        centered
         keyboard={false}
       >
         <Modal.Header closeButton>
@@ -465,9 +464,7 @@ export default function ArtistProfile(props) {
                 <h5>Event City</h5>
                 <span className="p-float-label">
                   <InputNumber id="username" onChange={(e) => console.log(e)} />
-                  <label htmlFor="username">
-                    Enter the city where event took place
-                  </label>
+                  <label htmlFor="username">Location</label>
                 </span>
                 <br />
                 <h5>Event Date</h5>
@@ -489,8 +486,7 @@ export default function ArtistProfile(props) {
               <span className="p-float-label">
                 <InputText id="username" onChange={(e) => console.log(e)} />
                 <label htmlFor="username">
-                  Only your first name will be publicly displayed with your
-                  review
+                  Only your first name will be displayed with your review
                 </label>
               </span>
               <br />
@@ -498,7 +494,7 @@ export default function ArtistProfile(props) {
               <span className="p-float-label">
                 <InputText id="username" onChange={(e) => console.log(e)} />
                 <label htmlFor="username">
-                  Your Email is only used for Review Verification
+                  Your Email is only for Review Verification
                 </label>
               </span>
               <br />
