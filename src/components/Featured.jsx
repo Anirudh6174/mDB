@@ -10,20 +10,17 @@ function Featured() {
       <Row className="featured-row">
         <Col>
           <div className="featured-description">
-            <h3>Our top stars</h3>
-            <h1>MEET TRENDING ARTISTS</h1>
-            <p>
+            <h3 className="featured-description-h3">Our top stars</h3>
+            <h1 className="featured-description-h1">MEET TRENDING ARTISTS</h1>
+            <p className="featured-p-tag">
               Our AI Engine automatically searches for the top performing
               artists in your locality
             </p>
-
-            <button
-              variant="outline-warning"
-              className="step-orangeBtn"
-              href="/bookartist"
-            >
-              View All <i className="pi pi-arrow-right"></i>
-            </button>
+            <a href="/bookartist">
+              <button variant="outline-warning" className="step-orangeBtn">
+                View All <i className="pi pi-arrow-right"></i>
+              </button>
+            </a>
           </div>
         </Col>
         <Col>

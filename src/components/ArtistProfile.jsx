@@ -524,6 +524,7 @@ export default function ArtistProfile(props) {
               height: "100%",
               width: "80%",
               minWidth: 250,
+              maxHeight: 600,
             }}
             src={props.selectedArtist.bannerimg}
             alt=""

@@ -73,6 +73,7 @@ p {
 .hp-step1 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .hp-step1-left-panel-heading {
@@ -82,6 +83,7 @@ p {
 .hp-step2 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .hp-call-to-action {
@@ -106,12 +108,14 @@ p {
 .hp-form-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .hp-about {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  text-align: -webkit-center;
 }
 
 .hp-about-h3 {
@@ -132,7 +136,7 @@ p {
 .hp-step1-left-panel {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-left: 50px;
   text-align: left;
 }
@@ -154,17 +158,17 @@ p {
   background-image: url("https://i.postimg.cc/D024HHc9/class-style.png");
   background-repeat: no-repeat;
   background-position: center;
-  width: 80%;
+  width: auto;
   height: auto;
 }
 
 .hp-step1-right-panel-image {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
 .hp-step2-left-panel-image {
-  width: 80%;
+  width: auto;
   height: auto;
 }
 
@@ -172,7 +176,7 @@ p {
   margin: 100px 0 0 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 
   text-align: left;
 }
@@ -190,8 +194,8 @@ p {
 }
 
 .hp-step2-right-panel-button-wrapper {
-  display: inline-block;
-  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 .hp-categories {
@@ -218,7 +222,7 @@ p {
 }
 
 .hp-banner-action-description {
-  font-size: 25px !important;
+  font-size: 27px !important;
 }
 
 .hp-banner-action-details {
@@ -248,7 +252,7 @@ p {
 }
 
 .hp-steps-wrapper {
-  display: inline-block;
+  display: inline;
   align-content: center;
 }
 
@@ -726,6 +730,13 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+  p {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 60px !important;
+  }
+
   .sr-fixedheight {
     min-height: 70vh;
   }
@@ -893,5 +904,42 @@ p {
   .slide1-img5-main {
     height: 500px;
     width: 400px;
+  }
+  .hp-step1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hp-step1-left-panel-heading {
+    margin-bottom: 20px;
+  }
+  .hp-step2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .hp-step2-right-panel {
+    margin: 50px 0 0 0;
+  }
+  .hp-form-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .hp-form-left-panel {
+    margin: 25px 0 20px 0;
+  }
+  .featured-p-tag {
+    font-size: 18px !important;
+  }
+  .hp-banner-action-description {
+    font-size: 25px;
+  }
+  .featured-description-h1 {
+    font-size: 40px !important;
+  }
+  .featured-description-h3 {
+    font-size: 40px !important;
   }
 }

@@ -11,12 +11,11 @@ function Steps() {
             <br />
             <p>SELECT YOUR ARTIST</p>
             <h2>
-              CHOOSE ARTIST
-              <br />
-              TYPE, LOCATION, DATE <br />
+              CHOOSE ARTIST TYPE,
+              <br /> LOCATION, DATE <br />
               AND BUDGET
             </h2>
-            <p className="hp-step1-left-panel-details">
+            <p className=" hp-step1-left-panel-details">
               myDurbar.com offers you many types of artists available in your
               <br />
               area within your budget
@@ -54,13 +53,11 @@ function Steps() {
               experience!
             </p>
             <div className="hp-step2-right-panel-button-wrapper">
-              <button
-                variant="outline-warning"
-                className="step-orangeBtn"
-                href="/bookartist"
-              >
-                BOOK NOW <i className="pi pi-arrow-right"></i>
-              </button>
+              <a href="/bookartist">
+                <button variant="outline-warning" className="step-orangeBtn">
+                  BOOK NOW <i className="pi pi-arrow-right"></i>
+                </button>
+              </a>
             </div>
           </div>
         </div>

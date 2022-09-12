@@ -333,15 +333,14 @@ export default function SliderRevo() {
                         MUCH MUCH <br /> MORE
                       </em>
                     </h1>
-                    <a href="/bookartist">
-                      <Button
-                        className="sr-bookBtn"
-                        variant="light"
-                        href="/bookartist"
-                      >
-                        <b>CHECK OUR TOP CATEGORIES</b>
-                      </Button>
-                    </a>
+
+                    <Button
+                      className="sr-bookBtn"
+                      variant="light"
+                      href="/bookartist"
+                    >
+                      <b>CHECK OUR TOP CATEGORIES</b>
+                    </Button>
                   </div>
                 </Bounce>
               </div>

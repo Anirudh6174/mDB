@@ -291,11 +291,11 @@ export default function SearchPage() {
                     <Card.Img
                       style={{
                         padding: "20px",
-                        width: "30vw",
-                        height: "40vh",
+                        width: "20vw",
+                        height: "50vh",
                       }}
                       variant="top"
-                      src="https://i.pinimg.com/originals/89/39/06/893906d9df7228cc36e1b3679a0d1dac.png"
+                      src="https://cdn.dribbble.com/users/2382015/screenshots/6065978/no_result_still_2x.gif?compress=1&resize=400x300"
                     />
                   </>
                 )}
