@@ -9,6 +9,7 @@ import Forms from "./components/Forms";
 import SliderRevo from "./components/SliderRevo";
 import Steps from "./components/Steps";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Main() {
   return (
@@ -22,6 +23,7 @@ export default function Main() {
       <Featured />
       <Banner />
       <Forms />
+      <Footer />
     </>
   );
 }
