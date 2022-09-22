@@ -735,6 +735,16 @@ p {
   background-color: rgba(79, 93, 96, 0.267);
 }
 
+.hp-footer-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+.hp-footer-info-detail {
+  font-size: 13px;
+}
+
 .hp-footer-info-right {
   padding-bottom: 40px;
 }

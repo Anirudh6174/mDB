@@ -14,9 +14,9 @@ function Footer() {
           </p>
         </div>
         <div className="hp-footer-info-left">
-          <h5>
+          <h6>
             © 2022 mydurbar.com is an enterprise unit of TSS Initiatives LLP
-          </h5>
+          </h6>
         </div>
       </div>
     </div>
