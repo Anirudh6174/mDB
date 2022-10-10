@@ -24,6 +24,7 @@ export default function SearchPage() {
   let [screen, setScreen] = useState(1);
   const [answerArray, setAnswerArray] = useState([]);
   const [selectedArtist, setSelectedArtist] = useState([]);
+  let [date, setDate] = useState();
 
   const questionsArray = dataFile.questions;
 
@@ -149,7 +150,11 @@ export default function SearchPage() {
                 {CurrentQuestion?.Options.map((opt) => (
                   <Card
                     key={opt?.id}
-                    onClick={() => answerClicked(opt?.value)}
+                    onClick={() => {
+                      opt?.label === "Choose a date"
+                        ? setDate(date)
+                        : answerClicked(opt?.value);
+                    }}
                     variant="dark"
                     style={{
                       width: "15rem",
@@ -175,12 +180,12 @@ export default function SearchPage() {
                         <>
                           <Calendar
                             style={{ display: "flex", width: "500px" }}
-                            onChange={(e) => {}}
+                            onChange={(e) => {
+                              setDate(e.value);
+                            }}
                             inline
                           />
-                          <Button
-                            onClick={(e) => answerClicked(e.value)}
-                          ></Button>
+                          <Button onClick={() => answerClicked(date)}></Button>
                         </>
                       )}
                       <Card.Title>{opt?.label}</Card.Title>

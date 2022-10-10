@@ -1,6 +1,8 @@
 {
-  "name": "hp-draft",
+  "name": "mydurbar-react",
   "version": "0.1.0",
+  "homepage": "http://mydurbar.com",
+  "description": "my durbar react app",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
