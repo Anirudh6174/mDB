@@ -13,10 +13,26 @@ function App() {
     <>
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route path="/" exact component={Main}></Route>
-          <Route path="/bookartist" exact component={SearchPage}></Route>
-          <Route path="/forartist" exact component={ArtistForm}></Route>
-          <Route path="/contactus" exact component={ContactUs}></Route>
+          <Route
+            path={process.env.PUBLIC_URL + "/"}
+            exact
+            component={Main}
+          ></Route>
+          <Route
+            path={process.env.PUBLIC_URL + "/bookartist"}
+            exact
+            component={SearchPage}
+          ></Route>
+          <Route
+            path={process.env.PUBLIC_URL + "/forartist"}
+            exact
+            component={ArtistForm}
+          ></Route>
+          <Route
+            path={process.env.PUBLIC_URL + "/contactus"}
+            exact
+            component={ContactUs}
+          ></Route>
         </Switch>
       </Router>
     </>
