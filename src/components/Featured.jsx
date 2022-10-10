@@ -24,41 +24,51 @@ function Featured() {
           </div>
         </Col>
         <Col>
-          <img
-            className="featured-images"
-            src="https://i.postimg.cc/05ML6Dbp/ADHRIT-2.jpg"
-            alt=""
-          />
+          <a href="/bookartist">
+            <img
+              className="featured-images"
+              src="https://i.postimg.cc/05ML6Dbp/ADHRIT-2.jpg"
+              alt=""
+            />
+          </a>
         </Col>
         <Col>
-          <img
-            className="featured-images"
-            src="https://i.postimg.cc/WbqwDYWV/CDS_Bhatti_(19).jpg"
-            alt=""
-          />
+          <a href="/bookartist">
+            <img
+              className="featured-images"
+              src="https://i.postimg.cc/WbqwDYWV/CDS_Bhatti_(19).jpg"
+              alt=""
+            />
+          </a>
         </Col>
       </Row>
       <Row className="featured-row">
         <Col>
-          <img
-            className="featured-images"
-            src="https://i.postimg.cc/y8PcnYz2/qqqqq.png"
-            alt=""
-          />
+          <a href="/bookartist">
+            <img
+              className="featured-images"
+              src="https://i.postimg.cc/y8PcnYz2/qqqqq.png"
+              alt=""
+            />
+          </a>
         </Col>
         <Col>
-          <img
-            className="featured-images"
-            src="https://i.postimg.cc/0N2Ky85B/Ayush-Kaushik-3.jpg"
-            alt=""
-          />
+          <a href="/bookartist">
+            <img
+              className="featured-images"
+              src="https://i.postimg.cc/0N2Ky85B/Ayush-Kaushik-3.jpg"
+              alt=""
+            />
+          </a>
         </Col>
         <Col>
-          <img
-            className="featured-images"
-            src="https://i.postimg.cc/pLLbqT2C/Shraddha_Tiwari_(16).jpg"
-            alt=""
-          />
+          <a href="/bookartist">
+            <img
+              className="featured-images"
+              src="https://i.postimg.cc/pLLbqT2C/Shraddha_Tiwari_(16).jpg"
+              alt=""
+            />
+          </a>
         </Col>
       </Row>
     </Container>

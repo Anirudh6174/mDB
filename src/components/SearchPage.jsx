@@ -179,7 +179,7 @@ export default function SearchPage() {
                             inline
                           />
                           <Button
-                            onClick={(f) => answerClicked(f.value)}
+                            onClick={(e) => answerClicked(e.value)}
                           ></Button>
                         </>
                       )}
