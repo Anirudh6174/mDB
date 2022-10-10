@@ -7,18 +7,17 @@ function CallToAction() {
       <div className="hp-call-to-action-wrapper">
         <div className="hp-call-to-action-left-panel">
           <h1>
-            ARE YOU A BUSINESS <br />
-            OWNER OR CORPORATE?
+            ARE YOU AN ARTIST
+            <br />
+            OR EVENT/BUSINESS OWNER?
           </h1>
           <div className="hp-call-to-action-button-wrapper">
-            <a href="/bookartist">
-              <button className="step-orangeBtn" href="/bookartist">
-                BUSINESS OWNERS CLICK HERE
-              </button>
+            <a href="/forartist">
+              <button className="step-orangeBtn">ARTISTS CLICK HERE</button>
             </a>
             <a href="/bookartist">
               <button className="step-orangeBtn" href="/bookartist">
-                CORPORATES CLICK HERE
+                BUSINESS OWNERS CLICK HERE
               </button>
             </a>
           </div>

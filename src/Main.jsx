@@ -10,10 +10,67 @@ import SliderRevo from "./components/SliderRevo";
 import Steps from "./components/Steps";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Modal from "react-bootstrap/Modal";
+import Row from "react-bootstrap/Row";
+import ArtistForm from "./components/ArtistForm";
+import ContactUs from "./components/ContactUs";
 
 export default function Main() {
+  const [modalShow, setModalShow] = useState(true);
   return (
     <>
+      <Modal
+        size="lg"
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        aria-labelledby="contained-modal-title-vcenter"
+        centered="true"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Are you an ARTIST or BUSINESS OWNER
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="show-grid">
+          <Container>
+            <Row>
+              <Col xs={9} md={8}>
+                <Button variant="outline-warning" href="/forartist">
+                  ARTISTS
+                </Button>
+                <br />
+                <br />
+                <p>
+                  Join us to get access to over
+                  <br />
+                  1000 leads and opportunities
+                  <br />
+                  with a hassle free profile, <br />
+                  payments and date management.
+                </p>
+              </Col>
+              <Col xs={9} md={4}>
+                <Button variant="outline-warning">BUSINESS OWNER</Button>
+                <br />
+                <br />
+                <p>
+                  Explore mydurbar.com for your business - manage artists,
+                  performances and experiences with our seamless platform to
+                  take away your cost overheads
+                </p>
+              </Col>
+            </Row>
+          </Container>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={() => setModalShow(false)}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+
       <Header />
       <SliderRevo />
       <About />

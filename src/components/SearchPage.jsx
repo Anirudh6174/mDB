@@ -17,6 +17,7 @@ import { Calendar } from "primereact/calendar";
 import { Bounce } from "react-reveal";
 import { Rating } from "primereact/rating";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function SearchPage() {
   let [stepCount, setStepCount] = useState(1);
@@ -105,95 +106,104 @@ export default function SearchPage() {
             />
           </ProgressBar>
         )}
+
         {screen == 1 && (
-          <div style={{ height: "100vh", backgroundColor: "#000000" }}>
-            {/*------- Header -----  */}
-            <div className="sp-heading">
-              <h1 className="heading-search">
-                {" "}
-                Welcome to myDurbar.com Artist Search
-              </h1>
-              <h3 className="heading-search">
-                Select your details to continue the booking.
-                <br />
-                <Badge bg="danger" text="dark">
-                  Step -{stepCount}
-                </Badge>
-              </h3>
-            </div>
-            {/*------- Question ----- */}
-            <Container>
-              <div className="questionHeading">
+          <>
+            <div style={{ height: "100vh", backgroundColor: "#000000" }}>
+              {/*------- Header -----  */}
+              <div className="sp-heading">
                 <h1 className="heading-search">
-                  <Badge bg="light" text="dark">
-                    {CurrentQuestion.Question}
-                  </Badge>
+                  {" "}
+                  Welcome to myDurbar.com Artist Search
                 </h1>
-                {/* <h1 className="heading-search"> 
+                <h3 className="heading-search">
+                  Select your details to continue the booking.
+                  <br />
+                  <Badge bg="danger" text="dark">
+                    Step -{stepCount}
+                  </Badge>
+                </h3>
+              </div>
+              {/*------- Question ----- */}
+              <Container>
+                <div className="questionHeading">
+                  <h1 className="heading-search">
+                    <Badge bg="light" text="dark">
+                      {CurrentQuestion.Question}
+                    </Badge>
+                  </h1>
+                  {/* <h1 className="heading-search"> 
                   <div className="sp-badgeBackground">
                     {CurrentQuestion.Heading}
                   </div>
                 </h1> */}
-              </div>
-            </Container>
-            {/* Options */}
-            <Container
-              className="sp-optionsCard"
-              style={{
-                backgroundColor: "#000000",
-              }}
-            >
-              {CurrentQuestion?.Options.map((opt) => (
-                <Card
-                  key={opt?.id}
-                  onClick={() => answerClicked(opt?.value)}
-                  variant="dark"
-                  style={{
-                    width: "15rem",
-                    display: "inline-block",
-                    margin: "15px",
-                    cursor: "pointer",
-                  }}
-                >
-                  {CurrentQuestion?.Count === 3 || 4 ? (
-                    <></>
-                  ) : (
-                    <Card.Img
-                      style={{
-                        maxHeight: 120,
-                      }}
-                      variant="top"
-                      src={CurrentQuestion?.Thumnail}
-                    />
-                  )}
-
-                  <Card.Body>
-                    {opt?.label === "Choose a date" && (
-                      <Calendar
-                        style={{ display: "flex", width: "500px" }}
-                        onChange={(e) => answerClicked(e.value)}
-                        inline
+                </div>
+              </Container>
+              {/* Options */}
+              <Container
+                className="sp-optionsCard"
+                style={{
+                  backgroundColor: "#000000",
+                }}
+              >
+                {CurrentQuestion?.Options.map((opt) => (
+                  <Card
+                    key={opt?.id}
+                    onClick={() => answerClicked(opt?.value)}
+                    variant="dark"
+                    style={{
+                      width: "15rem",
+                      display: "inline-block",
+                      margin: "15px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    {CurrentQuestion?.Count === 3 || 4 ? (
+                      <></>
+                    ) : (
+                      <Card.Img
+                        style={{
+                          maxHeight: 120,
+                        }}
+                        variant="top"
+                        src={CurrentQuestion?.Thumnail}
                       />
                     )}
-                    <Card.Title>{opt?.label}</Card.Title>
-                  </Card.Body>
-                </Card>
-              ))}
-              <br></br>
 
-              {CurrentQuestion.Count === 1 ? (
-                <></>
-              ) : (
-                <Button
-                  onClick={() => onBackPressed()}
-                  variant="outline-warning"
-                  size="md"
-                >
-                  Go Back
-                </Button>
-              )}
-            </Container>{" "}
-          </div>
+                    <Card.Body>
+                      {opt?.label === "Choose a date" && (
+                        <>
+                          <Calendar
+                            style={{ display: "flex", width: "500px" }}
+                            onChange={(e) => {}}
+                            inline
+                          />
+                          <Button
+                            onClick={(f) => answerClicked(f.value)}
+                          ></Button>
+                        </>
+                      )}
+                      <Card.Title>{opt?.label}</Card.Title>
+                    </Card.Body>
+                  </Card>
+                ))}
+                <br></br>
+
+                {CurrentQuestion.Count === 1 ? (
+                  <></>
+                ) : (
+                  <Button
+                    onClick={() => onBackPressed()}
+                    variant="outline-warning"
+                    size="md"
+                  >
+                    Go Back
+                  </Button>
+                )}
+              </Container>{" "}
+            </div>
+            <Footer />
+          </>
         )}
         {/* Result Screen */}
         {screen === 2 && (

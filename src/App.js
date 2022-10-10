@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SearchPage from "./components/SearchPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "primeicons/primeicons.css";
+import ArtistForm from "./components/ArtistForm";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={Main}></Route>
           <Route path="/bookartist" exact component={SearchPage}></Route>
+          <Route path="/forartist" exact component={ArtistForm}></Route>
+          <Route path="/contactus" exact component={ContactUs}></Route>
         </Switch>
       </Router>
     </>

@@ -279,6 +279,15 @@ p {
   margin: 50px 0 0px 0;
 }
 
+.hp-artist-form {
+  margin-top: 35px;
+}
+
+.hp-contact-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 /* Slider code SliderRevo */
 
 .sr-fixedheight {
@@ -742,7 +751,7 @@ p {
 }
 
 .hp-footer-info-detail {
-  font-size: 13px;
+  font-size: 14x;
 }
 
 .hp-footer-info-right {

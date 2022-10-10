@@ -18,15 +18,26 @@ export default function Header() {
         variant="dark"
       >
         <Container>
-          <Navbar.Brand href="/">myDurbar</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img
+              alt=""
+              src="https://i.postimg.cc/BnJ31qF7/my-Durbar-Logo-Placeholder.jpg"
+              width="200"
+              height="120"
+              className="d-inline-block align-top"
+            />{" "}
+          </Navbar.Brand>
+
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               {/* <Nav.Link href="/">Artist Login</Nav.Link> */}
               <Nav.Link href="/bookartist">Artist Search</Nav.Link>
+              <Nav.Link href="/forartist">Artist Registration</Nav.Link>
+              <Nav.Link href="/contactus">Contact US</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="/">Contact US</Nav.Link>
+              <a>Call Us: +91-9643699643</a>
               {/* <Nav.Link eventKey={2} href="#memes">
                 Terms & Conditions
               </Nav.Link> */}

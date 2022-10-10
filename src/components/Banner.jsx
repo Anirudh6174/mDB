@@ -11,7 +11,7 @@ function Banner() {
         />
         <div className="hp-banner-action-wrapper">
           <div className="hp-banner-action-details">
-            <h3>artist or artist manager?</h3>
+            <h3>artist manager?</h3>
             <h2 className="hp-banner-action-description">
               Use myDurbar.com to easily manage <br /> your Clients, Events,
               Schedules and Much More!

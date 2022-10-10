@@ -49,7 +49,7 @@ function Featured() {
         <Col>
           <img
             className="featured-images"
-            src="https://i.postimg.cc/0N2Ky85B/Ayush_Kaushik__(3).jpg"
+            src="https://i.postimg.cc/0N2Ky85B/Ayush-Kaushik-3.jpg"
             alt=""
           />
         </Col>
