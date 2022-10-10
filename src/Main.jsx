@@ -38,23 +38,21 @@ export default function Main() {
         <Modal.Body className="show-grid">
           <Container>
             <Row>
-              <Col xs={9} md={8}>
+              <Col>
                 <Button variant="outline-warning" href="/forartist">
                   ARTISTS
                 </Button>
                 <br />
                 <br />
                 <p>
-                  Join us to get access to over
-                  <br />
-                  1000 leads and opportunities
-                  <br />
-                  with a hassle free profile, <br />
-                  payments and date management.
+                  Join us to get access to over 1000 leads and opportunities
+                  with a hassle free profile, payments and date management.
                 </p>
               </Col>
-              <Col xs={9} md={4}>
-                <Button variant="outline-warning">BUSINESS OWNER</Button>
+              <Col>
+                <Button variant="outline-warning" href="/contactus">
+                  BUSINESS OWNER
+                </Button>
                 <br />
                 <br />
                 <p>
@@ -67,7 +65,9 @@ export default function Main() {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={() => setModalShow(false)}>Close</Button>
+          <Button variant="secondary" onClick={() => setModalShow(false)}>
+            Close
+          </Button>
         </Modal.Footer>
       </Modal>
 

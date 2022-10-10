@@ -11,16 +11,16 @@ function Banner() {
         />
         <div className="hp-banner-action-wrapper">
           <div className="hp-banner-action-details">
-            <h3>artist manager?</h3>
+            <h3>Artist Manager?</h3>
             <h2 className="hp-banner-action-description">
               Use myDurbar.com to easily manage <br /> your Clients, Events,
               Schedules and Much More!
             </h2>
           </div>
           <div className="hp-banner-action-button">
-            {/* <button className="step-orangeBtn" href="/bookartist">
-              SIGN IN
-            </button> */}
+            <a href="/contactus">
+              <button className="step-orangeBtn">book demo</button>
+            </a>
           </div>
         </div>
       </div>
