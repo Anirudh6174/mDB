@@ -10,7 +10,7 @@ function About() {
           <br /> VENUES, FESTIVALS AND NEEDS
         </h1>
         <br />
-        <p>
+        <p className="hp-about-detail">
           myDurbar.com is a one of its kind platform that gives you exclusive
           access to unique artists and performers that will turn your place into
           a 21st century Royal Durbar.

@@ -1,8 +1,8 @@
 {
-  "name": "mydurbar-react",
+  "name": "myDurbar",
   "version": "0.1.0",
   "homepage": "http://mydurbar.com",
-  "description": "my durbar react app",
+  "description": "myDurbar react app",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",

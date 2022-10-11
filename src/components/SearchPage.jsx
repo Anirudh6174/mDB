@@ -185,9 +185,16 @@ export default function SearchPage() {
                             }}
                             inline
                           />
-                          <Button onClick={() => answerClicked(date)}></Button>
+                          <Button
+                            variant="success"
+                            size="lg"
+                            onClick={() => answerClicked(date)}
+                          >
+                            Select
+                          </Button>
                         </>
                       )}
+
                       <Card.Title>{opt?.label}</Card.Title>
                     </Card.Body>
                   </Card>

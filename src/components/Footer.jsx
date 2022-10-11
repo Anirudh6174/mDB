@@ -12,7 +12,7 @@ function Footer() {
             <br />
             Phone - +91-9643699643
           </p>
-          <h6>
+          <h6 className="hp-footer-info-copyright">
             © 2022 mydurbar.com is an enterprise unit of TSS Initiatives LLP
           </h6>
         </div>
