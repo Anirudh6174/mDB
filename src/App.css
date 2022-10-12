@@ -996,4 +996,9 @@ p {
   .hp-about-detail {
     font-size: 34px;
   }
+  .modal-backdrop {
+    height: 100% !important;
+
+    width: 100% !important;
+  }
 }
