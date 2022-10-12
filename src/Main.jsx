@@ -26,6 +26,7 @@ export default function Main() {
       <Modal
         size="lg"
         show={modalShow}
+        enforceFocus="true"
         onHide={() => setModalShow(false)}
         aria-labelledby="contained-modal-title-vcenter"
         centered="true"
