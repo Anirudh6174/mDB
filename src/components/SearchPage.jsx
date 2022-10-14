@@ -110,7 +110,7 @@ export default function SearchPage() {
 
         {screen == 1 && (
           <>
-            <div style={{ height: "100vh", backgroundColor: "#000000" }}>
+            <div style={{ backgroundColor: "#000000" }}>
               {/*------- Header -----  */}
               <div className="sp-heading">
                 <h1 className="heading-search">
