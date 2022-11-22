@@ -163,8 +163,8 @@ export const dataList = [
     location: "Delhi",
     price: 9000,
     rating: 4,
-    coversrc: "https://i.postimg.cc/MH7d8yYB/Rahul-Chaudhary-5.jpg",
-    bannerimg: "https://i.postimg.cc/6qXfz8Np/Rahul-Chaudhary-7.jpg",
+    coversrc: "https://i.postimg.cc/R0cLgYkF/Rahul.jpg",
+    bannerimg: "https://i.postimg.cc/QCNm9qnM/Rahul-1.jpg",
     experience: "8 years",
     instruments: ["Guitar"],
     vidArray: [
