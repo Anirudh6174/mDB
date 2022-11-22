@@ -20,8 +20,9 @@ import { addLocale } from "primereact/api";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Footer from "./Footer";
+import Header from "./Header";
 
-export default function ArtistProfile(props) {
+export default function ArtistProfile() {
   // Creating ref for scrolling into Div
 
   // Handle NavBar clickScroll eventKey ->
@@ -57,7 +58,7 @@ export default function ArtistProfile(props) {
   };
 
   // Genre List from DataFile
-  const genreFile = dataFile.genreDescription;
+
   const [showPopUp, setShowPopUp] = useState(false);
   const [bookNowPopUp, setBookNowPopUp] = useState(false);
   const [paymentDone, setPaymentDone] = useState(false);
@@ -111,10 +112,9 @@ export default function ArtistProfile(props) {
     return () => clearTimeout(timeId);
   });
 
-  const vidArray = props.selectedArtist.vidArray;
-
   return (
     <>
+      <Header />
       <div className="ap-body-Wrapper">
         {/* Book Now Modal; handled by -handleBookNow() */}
         <Modal
@@ -127,9 +127,7 @@ export default function ArtistProfile(props) {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>
-              Thanks for choosing : {props.selectedArtist.title}
-            </Modal.Title>
+            <Modal.Title>Thanks for choosing : Wajid Ahmed Khan</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p>
@@ -282,7 +280,7 @@ export default function ArtistProfile(props) {
               </Tab>
               <Tab eventKey="payumoney" title="PayUMoney">
                 <div>
-                  <h5>Total Amount : ₹ {props.selectedArtist.price}</h5>
+                  <h5>Total Amount : ₹ 12000</h5>
                   <div
                     style={{
                       display: "flex",
@@ -313,7 +311,7 @@ export default function ArtistProfile(props) {
                   </h5>
 
                   <BootStrapBtn
-                    href="https://pmny.in/3IYcj32EfH6R"
+                    href="https://pmny.in/8IDMaCtzyoGP"
                     target="_blank"
                     variant="success"
                     size="md"
@@ -346,7 +344,7 @@ export default function ArtistProfile(props) {
         >
           <Modal.Header closeButton>
             <Modal.Title>
-              Revised Requested Quote for {props.selectedArtist.title}
+              Revised Requested Quote for Wajid Ahmed Khan
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -428,9 +426,7 @@ export default function ArtistProfile(props) {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>
-              Please add a Review for {props.selectedArtist.title}
-            </Modal.Title>
+            <Modal.Title>Please add a Review for Wajid Ahmed Khan</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p>
@@ -535,7 +531,7 @@ export default function ArtistProfile(props) {
                 minWidth: 250,
                 maxHeight: 600,
               }}
-              src={props.selectedArtist.bannerimg}
+              src="https://i.postimg.cc/7h4Szq7b/Whats-App-Image-2022-11-14-at-10-55-00.jpg"
               alt=""
             />
           </div>
@@ -544,50 +540,37 @@ export default function ArtistProfile(props) {
               <img
                 height="150px"
                 width="150px"
-                src={props.selectedArtist.coversrc}
+                src="https://i.postimg.cc/jjNW4GRf/Whats-App-Image-2022-11-14-at-10-52-14.jpg"
               />
-              <h2>{props.selectedArtist.title}</h2>
+              <h2>Wajid Ahmed Khan</h2>
               <Badge pill bg="light" text="dark">
-                {props.selectedArtist.category}
+                Instrumentalist
               </Badge>
             </div>
             <div className="ap-rating">
-              <Rating
-                value={props.selectedArtist.rating}
-                cancel={false}
-                stars={5}
-              />
+              <Rating value={5} cancel={false} stars={5} />
             </div>
-            <h6>{props.selectedArtist.reviews}</h6>
+            <h6>3 Reviews</h6>
 
             <div className="ap-info">
               <div style={{ width: "60%", fontSize: 24, fontWeight: 700 }}>
                 <div className="ap-infoRow">
                   <div>
-                    <span className="pi pi-home">
-                      {" "}
-                      {props.selectedArtist.location}{" "}
-                    </span>
+                    <span className="pi pi-home"> Delhi </span>
                   </div>
                   <div>
-                    <span className="pi pi-tag">
-                      {" "}
-                      {props.selectedArtist.category}
-                    </span>
+                    <span className="pi pi-tag"> Instrumentalist</span>
                   </div>
                 </div>
                 <div className="ap-infoRow">
                   <div>
                     <span className="pi pi-money-bill">
                       {" ₹"}
-                      {props.selectedArtist.price}
+                      12000
                     </span>
                   </div>
                   <div>
-                    <span className="pi pi-globe">
-                      {" "}
-                      {props.selectedArtist.experience}
-                    </span>
+                    <span className="pi pi-globe"> 6 years</span>
                   </div>
                 </div>
               </div>
@@ -652,82 +635,64 @@ export default function ArtistProfile(props) {
         <div className="ap-profileBody" id="genre">
           <h3 className="heading-search"> Media Gallery</h3>
           <div className="ap-fixedDivHeight ap-profileBody-video" id="vid">
-            {/* <div className="ap-individual-vid-card">
-            <iframe
-              className="ap-video-iframe"
-              width="266"
-              height="150"
-              src="https://www.youtube.com/embed/kgkWUCket68"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+            <div className="ap-individual-vid-card">
+              <iframe
+                className="ap-video-iframe"
+                width="266"
+                height="150"
+                src="https://www.youtube.com/embed/cMiyN8TC8YM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
 
-          <div className="ap-individual-vid-card">
-            <iframe
-              className="ap-video-iframe"
-              width="266"
-              height="150"
-              src="https://www.youtube.com/embed/W6E1A-YCfAk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+            <div className="ap-individual-vid-card">
+              <iframe
+                className="ap-video-iframe"
+                width="266"
+                height="150"
+                src="https://www.youtube.com/embed/2m6jTTbhXVI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
 
-          <div className="ap-individual-vid-card">
-            <iframe
-              className="ap-video-iframe"
-              width="266"
-              height="150"
-              src="https://www.youtube.com/embed/kgkWUCket68"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+            <div className="ap-individual-vid-card">
+              <iframe
+                className="ap-video-iframe"
+                width="266"
+                height="150"
+                src="https://www.youtube.com/embed/sZfwfHAcIwU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
 
-          <div className="ap-individual-vid-card">
-            <iframe
-              className="ap-video-iframe"
-              width="266"
-              height="150"
-              src="https://www.youtube.com/embed/W6E1A-YCfAk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div> */}
-
-            {vidArray.map((e) => {
-              return (
-                <div className="ap-individual-vid-card">
-                  <iframe
-                    className="ap-video-iframe"
-                    width="266"
-                    height="150"
-                    src={e}
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              );
-            })}
+            <div className="ap-individual-vid-card">
+              <iframe
+                className="ap-video-iframe"
+                width="266"
+                height="150"
+                src="https://www.youtube.com/embed/fOVFHIfto_4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
           <hr />
           <div className="ap-fixedDivHeight ap-profileBody-details" id="bio">
             <h3 className="heading-search"> Artist Bio</h3>
             <p className="ap-details-bio">
               <br />
-              {props.selectedArtist.bio}
-
+              Amazing Percussionist
               <br />
               <br />
               <br />
@@ -739,24 +704,24 @@ export default function ArtistProfile(props) {
             <h3 className="heading-search"> Genre</h3>
             <br />
             <Carousel className="ap-genreCrousel">
-              {props.selectedArtist.genre.map((eG) => (
-                <Carousel.Item>
-                  <div className="ap-profileBody-photos">
-                    <Card style={{ width: "15rem" }}>
-                      <Card.Body>
-                        <Card.Title style={{ fontSize: 23 }}>{eG}</Card.Title>
-                        {/* <Card.Title>---</Card.Title>
+              <Carousel.Item>
+                <div className="ap-profileBody-photos">
+                  <Card style={{ width: "15rem" }}>
+                    <Card.Body>
+                      <Card.Title style={{ fontSize: 23 }}>
+                        Percussionist
+                      </Card.Title>
+                      {/* <Card.Title>---</Card.Title>
                       <Card.Title>{genreFile[eG]}</Card.Title> */}
-                        {/* {dataFile.genreDescription.map((f) => (
+                      {/* {dataFile.genreDescription.map((f) => (
                         {}</Card.Text>100
                       ))} */}
-                      </Card.Body>
-                    </Card>
-                    {/* 
+                    </Card.Body>
+                  </Card>
+                  {/* 
                   <p style={{ maxWidth: 400 }}></p> */}
-                  </div>
-                </Carousel.Item>
-              ))}
+                </div>
+              </Carousel.Item>
             </Carousel>
           </div>
         </div>

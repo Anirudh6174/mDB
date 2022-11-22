@@ -18,6 +18,7 @@ import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import ArtistForm from "./components/ArtistForm";
 import ContactUs from "./components/ContactUs";
+import Instrumentalist from "./components/Instrumentalist";
 
 export default function Main() {
   const [modalShow, setModalShow] = useState(true);
