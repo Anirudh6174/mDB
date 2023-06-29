@@ -19,7 +19,7 @@ function Footer() {
         <div className="hp-footer-info-left">
           <img
             alt=""
-            src="https://i.postimg.cc/mZ0GK8Rc/logo.png"
+            src="https://i.postimg.cc/wM2wL01C/my-Durbar-logo-cropped.png"
             width="250"
             height="150"
           />

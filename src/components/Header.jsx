@@ -21,7 +21,7 @@ export default function Header() {
           <Navbar.Brand href="/">
             <img
               alt=""
-              src="https://i.postimg.cc/BnJ31qF7/my-Durbar-Logo-Placeholder.jpg"
+              src="https://i.postimg.cc/wM2wL01C/my-Durbar-logo-cropped.png"
               width="200"
               height="120"
               className="d-inline-block align-top"
