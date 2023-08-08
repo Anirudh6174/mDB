@@ -15,7 +15,7 @@ function CallToAction() {
             <a href="/forartist">
               <button className="step-orangeBtn">ARTISTS CLICK HERE</button>
             </a>
-            <a href="/contactus">
+            <a href="https://corporate.mydurbar.com/">
               <button className="step-orangeBtn">
                 BUSINESS OWNERS CLICK HERE
               </button>
