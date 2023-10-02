@@ -34,34 +34,37 @@ export default function Main() {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Are you an ARTIST or BUSINESS OWNER
+            myDurbar Presents GODS OF ROCK - Mega Rock tribute by Trouble Clef
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="show-grid">
           <Container>
             <Row>
               <Col>
-                <Button variant="outline-warning" href="/forartist">
-                  ARTISTS
-                </Button>
                 <br />
                 <br />
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/O7fOIBL0uyU?si=18TL3QdV-_5alrzL"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  title="video"
+                ></iframe>
                 <p>
-                  Join us to get access to over 1000 leads and opportunities
-                  with a hassle free profile, payments and date management.
+                  Saturday, 7th October, 9:00 PM <br />
+                  Hard Rock Cafe Delhi,Janpath, Connaught Place, New Delhi
+                  110001
                 </p>
-              </Col>
-              <Col>
-                <Button variant="outline-warning" href="/contactus">
-                  BUSINESS OWNER
+                <Button
+                  variant="outline-warning"
+                  href="https://mydurbar.mojo.page/7-oct-gods-of-rock-tribute-trouble-clef"
+                  target="_blank"
+                >
+                  BOOK NOW
                 </Button>
-                <br />
-                <br />
-                <p>
-                  Explore mydurbar.com for your business - manage artists,
-                  performances and experiences with our seamless platform to
-                  take away your cost overheads
-                </p>
               </Col>
             </Row>
           </Container>
