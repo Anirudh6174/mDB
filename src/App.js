@@ -11,7 +11,8 @@ import ReactGA from "react-ga";
 import Instrumentalist from "./components/Instrumentalist";
 
 function App() {
-  ReactGA.initialize("UA-232096677-1");
+  const TRACKING_ID = "384933752";
+  ReactGA.initialize("384933752");
   ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <>

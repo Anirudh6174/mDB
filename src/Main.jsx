@@ -1,5 +1,5 @@
 import React from "react";
-
+import ReactGA from "react-ga";
 import About from "./components/About";
 import Banner from "./components/Banner";
 import CallToAction from "./components/CallToAction";
@@ -21,6 +21,8 @@ import ContactUs from "./components/ContactUs";
 import Instrumentalist from "./components/Instrumentalist";
 
 export default function Main() {
+  const TRACKING_ID = "384933752";
+  ReactGA.initialize("384933752");
   const [modalShow, setModalShow] = useState(true);
   return (
     <>
