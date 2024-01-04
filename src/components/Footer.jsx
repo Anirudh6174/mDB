@@ -1,4 +1,5 @@
 import React from "react";
+import mdlogo from "../assets/mdlogo.png";
 
 function Footer() {
   return (
@@ -17,12 +18,7 @@ function Footer() {
           </h6>
         </div>
         <div className="hp-footer-info-left">
-          <img
-            alt=""
-            src="https://i.postimg.cc/wM2wL01C/my-Durbar-logo-cropped.png"
-            width="250"
-            height="150"
-          />
+          <img alt="" src={mdlogo} width="150" height="150" />
         </div>
       </div>
     </div>

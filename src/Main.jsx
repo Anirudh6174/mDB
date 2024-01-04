@@ -19,6 +19,7 @@ import Row from "react-bootstrap/Row";
 import ArtistForm from "./components/ArtistForm";
 import ContactUs from "./components/ContactUs";
 import Instrumentalist from "./components/Instrumentalist";
+import Maintenance from "../src/assets/Maintenance.png";
 
 export default function Main() {
   const TRACKING_ID = "384933752";
@@ -27,7 +28,7 @@ export default function Main() {
   const [modalShow, setModalShow] = useState(true);
   return (
     <>
-      <Modal
+      {/* <Modal
         size="lg"
         show={modalShow}
         enforceFocus="true"
@@ -77,9 +78,10 @@ export default function Main() {
             Close
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
 
       <Header />
+      {/*
       <SliderRevo />
       <About />
       <Steps />
@@ -87,7 +89,11 @@ export default function Main() {
       <CallToAction />
       <Featured />
       <Banner />
-      <Forms />
+      <Forms /> */}
+      <div className="hp-footer-info-left">
+        <img alt="" src={Maintenance} />
+      </div>
+
       <Footer />
     </>
   );
