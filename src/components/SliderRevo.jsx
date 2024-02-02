@@ -13,7 +13,7 @@ export default function SliderRevo() {
         <div
           className="sr-fixedheight sr-sliderhard"
           style={{
-            background: "url('https://i.postimg.cc/3R8R9p11/slide1-bg.jpg')",
+            background: "url('https://i.imgur.com/kHrz0Dk.jpg')",
           }}
         >
           <Container>
@@ -21,7 +21,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide1-item1 ">
                 <img
-                  src="https://i.postimg.cc/HkXfxNmc/20220720-081220-0000-724x1024.png"
+                  src="https://i.imgur.com/E1GbBdu.png"
                   alt=""
                   className="sr-imgBox bounce-2 slide1-img1"
                 ></img>
@@ -31,7 +31,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide1-item2">
                 <img
-                  src="https://i.postimg.cc/y6fB4267/20220720-081311-0000-724x1024.png"
+                  src="https://i.imgur.com/Zanq75d.png"
                   alt=""
                   className="sr-imgBox bounce-2 slide1-img2"
                 ></img>
@@ -41,7 +41,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide1-item3">
                 <img
-                  src="https://i.postimg.cc/PqNfNyqJ/png-20220720-081050-0000-724x1024.png"
+                  src="https://i.imgur.com/CZhbRz9.png"
                   alt=""
                   className="sr-imgBox bounce-3 slide1-img3"
                 ></img>
@@ -51,7 +51,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide1-item4">
                 <img
-                  src="https://i.postimg.cc/C52WBTdD/object-guitar-1-25.png"
+                  src="https://i.imgur.com/QMSTiRt.png"
                   alt=""
                   className="sr-imgBox bounce-3 slide1-img4"
                 ></img>
@@ -86,7 +86,7 @@ export default function SliderRevo() {
                 <Bounce left>
                   <img
                     className="slide1-hero"
-                    src="https://i.postimg.cc/XvrvBcg2/png-20220720-080903-0000-768x1086.png"
+                    src="https://i.imgur.com/R4QtlN2.png"
                     alt=""
                   ></img>
                 </Bounce>
@@ -102,7 +102,7 @@ export default function SliderRevo() {
         <div
           className="sr-fixedheight sr-sliderhard"
           style={{
-            background: "url('https://i.postimg.cc/GpQ3BtRy/slide2-bg.jpg')",
+            background: "url('https://i.imgur.com/8GaK6eq.jpg')",
           }}
         >
           <Container>
@@ -110,7 +110,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide2-item1">
                 <img
-                  src="https://i.postimg.cc/268J08Zh/20220720-082731-0000-724x1024.png"
+                  src="https://i.imgur.com/mLMe30d.png"
                   alt=""
                   className="sr-imgBox bounce-2 slide2-img1"
                 ></img>
@@ -120,7 +120,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide2-item2">
                 <img
-                  src="https://i.postimg.cc/VvzNGtF4/20220720-082236-0000-212x300.png"
+                  src="https://i.imgur.com/SohSwP6.png"
                   alt=""
                   className="sr-imgBox bounce-2 slide2-img2"
                 ></img>
@@ -130,7 +130,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide2-item4">
                 <img
-                  src="https://i.postimg.cc/sgQ5SYx6/20220720-081639-0000-212x300.png"
+                  src="https://i.imgur.com/yjhEjNk.png"
                   alt=""
                   className="sr-imgBox bounce-3 slide2-img4"
                 ></img>
@@ -140,7 +140,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide2-item5">
                 <img
-                  src="https://i.postimg.cc/xdZRV256/20220720-082949-0000-724x1024.png"
+                  src="https://i.imgur.com/uoFuBhH.png"
                   alt=""
                   className="sr-imgBox bounce-2 slide2-img5"
                 ></img>
@@ -150,7 +150,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide2-item6">
                 <img
-                  src="https://i.postimg.cc/BQshpvf6/png-20220720-082830-0000-724x1024.png"
+                  src="https://i.imgur.com/SgX2dpK.png"
                   alt=""
                   className="sr-imgBox bounce-3 slide2-img6"
                 ></img>
@@ -184,7 +184,7 @@ export default function SliderRevo() {
                 <Bounce left>
                   <img
                     className="slide2-hero"
-                    src="https://i.postimg.cc/wvx0kM7b/11111.png"
+                    src="https://i.imgur.com/Hcrn7qu.png"
                     alt=""
                     style={
                       {
@@ -205,7 +205,7 @@ export default function SliderRevo() {
         <div
           className="sr-fixedheight sr-sliderhard"
           style={{
-            background: "url('https://i.postimg.cc/4d2J50m4/slide3-bg.jpg')",
+            background: "url('https://i.imgur.com/Sy639wG.jpg')",
           }}
         >
           <Container>
@@ -213,7 +213,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide3-item1">
                 <img
-                  src="https://i.postimg.cc/dVCL0JD2/png-20220720-083732-0000-768x1086.png"
+                  src="https://i.imgur.com/rZyuA3K.png"
                   alt=""
                   className="sr-imgBox bounce-2 slide3-img1"
                 ></img>
@@ -223,7 +223,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide3-item2">
                 <img
-                  src="https://i.postimg.cc/wxDfDmPZ/png-20220720-083327-0000-212x300.png"
+                  src="https://i.imgur.com/DXWTpQb.png"
                   alt=""
                   className="sr-imgBox bounce-3 slide3-img2"
                 ></img>
@@ -233,7 +233,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide3-item3">
                 <img
-                  src="https://i.postimg.cc/7LCXhG0B/png-20220720-083401-0000-212x300.png"
+                  src="https://i.imgur.com/5DZlH3n.png"
                   alt=""
                   className="sr-imgBox bounce-3 slide3-img3"
                 ></img>
@@ -269,7 +269,7 @@ export default function SliderRevo() {
                 <Bounce left>
                   <img
                     className="slide3-hero"
-                    src="https://i.postimg.cc/bwY8KBp5/png-20220720-083216-0000-1086x1536.png"
+                    src="https://i.imgur.com/EmPP22u.png"
                     alt=""
                   ></img>
                 </Bounce>
@@ -285,7 +285,7 @@ export default function SliderRevo() {
         <div
           className="sr-fixedheight sr-sliderhard"
           style={{
-            background: "url('https://i.postimg.cc/L5qm0V1t/slide4-bg.jpg')",
+            background: "url('https://i.imgur.com/TY0kaZp.jpg')",
           }}
         >
           <Container>
@@ -293,7 +293,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide4-item1">
                 <img
-                  src="https://i.postimg.cc/brnKtVnB/png-20220720-082327-0000-724x1024.png"
+                  src="https://i.imgur.com/BnnsUdD.png"
                   alt=""
                   className="sr-imgBox bounce-2 slide4-img1"
                 ></img>
@@ -303,7 +303,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide4-item2">
                 <img
-                  src="https://i.postimg.cc/59ZJ2Lzr/object-turntable-1-50.png"
+                  src="https://i.imgur.com/KVBeApp.png"
                   alt=""
                   className="sr-imgBox bounce-2 slide4-img2"
                 ></img>
@@ -313,7 +313,7 @@ export default function SliderRevo() {
             <Bounce left>
               <div className="sr-smallbannerimages slide4-item3">
                 <img
-                  src="https://i.postimg.cc/HLtR07VT/object-vinyl-1-25.png"
+                  src="https://i.imgur.com/c8sRZX0.png"
                   alt=""
                   className="sr-imgBox bounce-2 slide4-img3"
                 ></img>
@@ -348,7 +348,7 @@ export default function SliderRevo() {
                 <Bounce left>
                   <img
                     className="slide4-hero1"
-                    src="https://i.postimg.cc/FRVSKVpY/New-DJ.png"
+                    src="https://i.imgur.com/f9ahp9r.png "
                     alt=""
                     style={
                       {

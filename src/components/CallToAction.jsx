@@ -23,10 +23,7 @@ function CallToAction() {
           </div>
         </div>
         <div className="hp-call-to-action-right-panel">
-          <img
-            src="https://i.postimg.cc/tCMBkJR7/png-20220720-084654-0000.png"
-            alt=""
-          />
+          <img src="https://i.imgur.com/do8XBCVl.png" alt="" />
         </div>
       </div>
     </div>

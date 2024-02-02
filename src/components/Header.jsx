@@ -33,15 +33,18 @@ export default function Header() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               {/* <Nav.Link href="/">Artist Login</Nav.Link> */}
-              {/* <Nav.Link href="/bookartist">Artist Search</Nav.Link> */}
+              <Nav.Link href="/bookartist">Artist Search</Nav.Link>
               <Nav.Link href="/forartist">Artist Registration</Nav.Link>
-              {/* <Nav.Link href="/contactus">Contact US</Nav.Link> */}
+              <Nav.Link href="/contactus">Contact US</Nav.Link>
             </Nav>
             <Nav>
-              <a>Call Us: +91-9643699643</a>
-              {/* <Nav.Link eventKey={2} href="#memes">
+              {/* <a>Call Us: +91-9643699643</a> */}
+              <Nav.Link
+                eventKey={2}
+                href="https://events.mydurbar.com/termsandconditions/"
+              >
                 Terms & Conditions
-              </Nav.Link> */}
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

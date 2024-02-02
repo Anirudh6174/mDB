@@ -81,18 +81,18 @@ export default function Main() {
       </Modal> */}
 
       <Header />
-      {/*
+
       <SliderRevo />
       <About />
       <Steps />
       <Categories />
       <CallToAction />
-      <Featured />
+      {/* <Featured /> */}
       <Banner />
-      <Forms /> */}
-      <div className="hp-footer-info-left">
+      <Forms />
+      {/* <div className="hp-footer-info-left">
         <img alt="" src={Maintenance} />
-      </div>
+      </div> */}
 
       <Footer />
     </>

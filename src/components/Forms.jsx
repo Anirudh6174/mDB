@@ -32,13 +32,13 @@ function Forms() {
   return (
     <div className="hp-form">
       <div className="hp-form-wrapper">
-        <div className="hp-form-left-panel">
+        {/* <div className="hp-form-left-panel">
           <img
             className="steps-imgbox bounce-6 hp-form-left-panel-image"
-            src="https://i.postimg.cc/jdSJXV2N/class03.png"
+            src="https://i.imgur.com/39v822Gl.png"
             alt=""
           />
-        </div>
+        </div> */}
         <div className="hp-form-right-panel">
           <h1>QUICK CALLBACK</h1>
           <Form ref={form} onSubmit={sendEmail}>
@@ -54,7 +54,7 @@ function Forms() {
             <Form.Group className="mb-3" controlId="formBasicName">
               <Form.Label>Phone</Form.Label>
               <Form.Control
-                type="number"
+                type="text"
                 placeholder="Enter Phone"
                 name="user_phone"
               />

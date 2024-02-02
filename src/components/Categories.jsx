@@ -16,7 +16,7 @@ function Categories() {
                 <Card.Img
                   className="cat-images"
                   variant="top"
-                  src="https://i.postimg.cc/ZK2PmkS3/Raghav_Sharma_(2).jpg"
+                  src="https://i.imgur.com/aQdphaU.jpg"
                 />
               </a>
               <Card.Body>
@@ -30,7 +30,7 @@ function Categories() {
                 <Card.Img
                   className="cat-images"
                   variant="top"
-                  src="https://i.postimg.cc/kgvGtDTy/Shivam_Tiwari_(23).jpg"
+                  src="https://i.imgur.com/Bpt9PtC.jpg"
                 />
               </a>
               <Card.Body>
@@ -44,7 +44,7 @@ function Categories() {
                 <Card.Img
                   className="cat-images"
                   variant="top"
-                  src="https://i.postimg.cc/NF3PqV4x/Vinay_Grover_(4).jpg"
+                  src="https://i.imgur.com/xay9H1m.png"
                 />
               </a>
               <Card.Body>
@@ -60,7 +60,7 @@ function Categories() {
                 <Card.Img
                   className="cat-images"
                   variant="top"
-                  src="https://i.postimg.cc/KzPd4X8S/aswe.jpg"
+                  src="https://i.imgur.com/QetDy2w.jpg"
                 />
               </a>
               <Card.Body>
@@ -74,7 +74,7 @@ function Categories() {
                 <Card.Img
                   className="cat-images"
                   variant="top"
-                  src="https://i.postimg.cc/W36TCWC8/nm.jpg"
+                  src="https://i.imgur.com/mVXgdiR.jpg"
                 />
               </a>
               <Card.Body>
@@ -88,7 +88,7 @@ function Categories() {
                 <Card.Img
                   className="cat-images"
                   variant="top"
-                  src="https://i.postimg.cc/kXfXnLGj/Tathaagat_Project_(30).jpg"
+                  src="https://i.imgur.com/WfN3Pt5.jpg"
                 />
               </a>
               <Card.Body>

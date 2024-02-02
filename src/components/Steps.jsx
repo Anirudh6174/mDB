@@ -25,7 +25,7 @@ function Steps() {
             <div className="hp-step1-right-panel-image-wrapper">
               <img
                 className="steps-imgbox bounce-6 hp-step1-right-panel-image"
-                src="https://i.postimg.cc/KzCtkrPS/png-20220716-220152-0000.png"
+                src="https://i.imgur.com/iziMfnal.png"
                 alt=""
               />
             </div>
@@ -35,7 +35,7 @@ function Steps() {
           <div className="hp-step2-left-panel-image-wrapper">
             <img
               className="steps-imgbox bounce-5 hp-step2-left-panel-image"
-              src="https://i.postimg.cc/vTxZm6st/png-20220720-084117-0000.png"
+              src="https://i.imgur.com/NavxmoBl.png"
               alt=""
             />
           </div>
