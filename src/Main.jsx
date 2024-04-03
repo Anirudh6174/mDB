@@ -1,5 +1,5 @@
 import React from "react";
-import ReactGA from "react-ga";
+
 import About from "./components/About";
 import Banner from "./components/Banner";
 import CallToAction from "./components/CallToAction";
@@ -19,16 +19,14 @@ import Row from "react-bootstrap/Row";
 import ArtistForm from "./components/ArtistForm";
 import ContactUs from "./components/ContactUs";
 import Instrumentalist from "./components/Instrumentalist";
-import Maintenance from "../src/assets/Maintenance.png";
-
+import { useHistory } from "react-router-dom";
+import SearchBarMain from "../src/components/SearchBarMain";
 export default function Main() {
-  const TRACKING_ID = "384933752";
-  ReactGA.initialize("384933752");
-  ReactGA.pageview(window.location.pathname + window.location.search);
   const [modalShow, setModalShow] = useState(true);
+
   return (
     <>
-      {/* <Modal
+      <Modal
         size="lg"
         show={modalShow}
         enforceFocus="true"
@@ -38,37 +36,37 @@ export default function Main() {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            myDurbar Presents GODS OF ROCK - Mega Rock tribute by Trouble Clef
+            Are you an ARTIST or BUSINESS OWNER
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="show-grid">
           <Container>
             <Row>
               <Col>
+                <Button variant="outline-warning" href="/forartist">
+                  ARTISTS
+                </Button>
                 <br />
                 <br />
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/O7fOIBL0uyU?si=18TL3QdV-_5alrzL"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                  title="video"
-                ></iframe>
                 <p>
-                  Saturday, 7th October, 9:00 PM <br />
-                  Hard Rock Cafe Delhi,Janpath, Connaught Place, New Delhi
-                  110001
+                  Join us to get access to over 1000 leads and opportunities
+                  with a hassle free profile, payments and date management.
                 </p>
+              </Col>
+              <Col>
                 <Button
                   variant="outline-warning"
-                  href="https://mydurbar.mojo.page/7-oct-gods-of-rock-tribute-trouble-clef"
-                  target="_blank"
+                  href="https://corporate.mydurbar.com/"
                 >
-                  BOOK NOW
+                  BUSINESS OWNER
                 </Button>
+                <br />
+                <br />
+                <p>
+                  Explore mydurbar.com for your business - manage artists,
+                  performances and experiences with our seamless platform to
+                  take away your cost overheads
+                </p>
               </Col>
             </Row>
           </Container>
@@ -78,9 +76,10 @@ export default function Main() {
             Close
           </Button>
         </Modal.Footer>
-      </Modal> */}
+      </Modal>
 
       <Header />
+      <SearchBarMain />
 
       <SliderRevo />
       <About />
@@ -90,10 +89,6 @@ export default function Main() {
       {/* <Featured /> */}
       <Banner />
       <Forms />
-      {/* <div className="hp-footer-info-left">
-        <img alt="" src={Maintenance} />
-      </div> */}
-
       <Footer />
     </>
   );

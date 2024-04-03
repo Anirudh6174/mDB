@@ -348,7 +348,7 @@ export default function SliderRevo() {
                 <Bounce left>
                   <img
                     className="slide4-hero1"
-                    src="https://i.imgur.com/f9ahp9r.png "
+                    src="https://i.imgur.com/f9ahp9r.png"
                     alt=""
                     style={
                       {

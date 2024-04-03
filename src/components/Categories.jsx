@@ -64,7 +64,7 @@ function Categories() {
                 />
               </a>
               <Card.Body>
-                <Card.Title>Instrumental</Card.Title>
+                <Card.Title>Instrumentalist</Card.Title>
               </Card.Body>
             </Card>
           </Col>

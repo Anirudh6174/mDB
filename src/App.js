@@ -7,13 +7,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "primeicons/primeicons.css";
 import ArtistForm from "./components/ArtistForm";
 import ContactUs from "./components/ContactUs";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import Instrumentalist from "./components/Instrumentalist";
+import ArtistProfile from "./components/ArtistProfile";
+
 
 function App() {
-  const TRACKING_ID = "384933752";
-  ReactGA.initialize("384933752");
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID);
+  ReactGA.send('pageview', {
+    pagePath: window.location.pathname + window.location.search,
+  });
   return (
     <>
       <Router basename={process.env.PUBLIC_URL}>
@@ -42,6 +45,11 @@ function App() {
             path={process.env.PUBLIC_URL + "/wajidkhan"}
             exact
             component={Instrumentalist}
+          ></Route>
+          <Route
+            path={process.env.PUBLIC_URL + "/artist/:artistName"}
+            exact
+            component={ArtistProfile}
           ></Route>
         </Switch>
       </Router>

@@ -35,7 +35,7 @@ function Forms() {
         {/* <div className="hp-form-left-panel">
           <img
             className="steps-imgbox bounce-6 hp-form-left-panel-image"
-            src="https://i.imgur.com/39v822Gl.png"
+            src="https://i.postimg.cc/jdSJXV2N/class03.png"
             alt=""
           />
         </div> */}

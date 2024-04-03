@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Card from "react-bootstrap/Card";
 import qrCode from "../assets/qrcode.png";
@@ -20,8 +21,50 @@ import { addLocale } from "primereact/api";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Footer from "./Footer";
+import axios from "axios"; //database
+import ReactGA from "react-ga4";
+import { useParams } from "react-router-dom";
+const apiUrl = process.env.REACT_APP_BACKEND_API_URL;
 
 export default function ArtistProfile(props) {
+  const [selectedArtist, setSelectedArtist] = useState(null);
+  const { artistName } = useParams();
+  console.log("artistName", artistName);
+  const [artists, setArtists] = useState([]);
+  const history = useHistory();
+  useEffect(() => {
+    fetchArtists();
+  }, []);
+
+  const fetchArtists = async () => {
+    try {
+      const response = await axios.get(`${apiUrl}/artists`);
+      setArtists(response.data);
+    } catch (error) {
+      console.error("Error fetching artists:", error);
+    }
+  };
+  console.log("artists from profile", artists);
+
+  useEffect(() => {
+    // Filter the artist based on the artistName
+    const matchingArtist = artists.find((artist) => artist.Name === artistName);
+
+    // If a matching artist is found, set it to selectedArtist
+    if (matchingArtist) {
+      setSelectedArtist(matchingArtist);
+    } else {
+      console.log("Artist not found");
+    }
+    console.log("artistName", artistName);
+    ReactGA.send({
+      hitType: "pageview",
+      page: history.location.pathname,
+      title: artistName,
+    });
+  }, [artists, artistName]);
+  console.log("selectedArtist", selectedArtist);
+
   // Creating ref for scrolling into Div
 
   // Handle NavBar clickScroll eventKey ->
@@ -31,7 +74,6 @@ export default function ArtistProfile(props) {
     console.log(h);
     window.scrollTo(0, h);
   };
-
   // Email JS for form submission
   const form = useRef();
 
@@ -111,7 +153,7 @@ export default function ArtistProfile(props) {
     return () => clearTimeout(timeId);
   });
 
-  const vidArray = props.selectedArtist.vidArray;
+  // const vidArray = selectedArtist?.vidArray;
 
   return (
     <>
@@ -128,7 +170,7 @@ export default function ArtistProfile(props) {
         >
           <Modal.Header closeButton>
             <Modal.Title>
-              Thanks for choosing : {props.selectedArtist.title}
+              Thanks for choosing : {selectedArtist?.Name}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -282,7 +324,7 @@ export default function ArtistProfile(props) {
               </Tab>
               <Tab eventKey="payumoney" title="PayUMoney">
                 <div>
-                  <h5>Total Amount : ₹ {props.selectedArtist.price}</h5>
+                  <h5>Total Amount : ₹ {selectedArtist?.price}</h5>
                   <div
                     style={{
                       display: "flex",
@@ -346,7 +388,7 @@ export default function ArtistProfile(props) {
         >
           <Modal.Header closeButton>
             <Modal.Title>
-              Revised Requested Quote for {props.selectedArtist.title}
+              Revised Requested Quote for {selectedArtist?.Name}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -429,7 +471,7 @@ export default function ArtistProfile(props) {
         >
           <Modal.Header closeButton>
             <Modal.Title>
-              Please add a Review for {props.selectedArtist.title}
+              Please add a Review for {selectedArtist?.Name}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -535,7 +577,7 @@ export default function ArtistProfile(props) {
                 minWidth: 250,
                 maxHeight: 600,
               }}
-              src={props.selectedArtist.bannerimg}
+              src={selectedArtist?.bannerimg}
               alt=""
             />
           </div>
@@ -544,21 +586,17 @@ export default function ArtistProfile(props) {
               <img
                 height="150px"
                 width="150px"
-                src={props.selectedArtist.coversrc}
+                src={selectedArtist?.coversrc}
               />
-              <h2>{props.selectedArtist.title}</h2>
+              <h2>{selectedArtist?.Name}</h2>
               <Badge pill bg="light" text="dark">
-                {props.selectedArtist.category}
+                {selectedArtist?.Category}
               </Badge>
             </div>
             <div className="ap-rating">
-              <Rating
-                value={props.selectedArtist.rating}
-                cancel={false}
-                stars={5}
-              />
+              <Rating value={selectedArtist?.rating} cancel={false} stars={5} />
             </div>
-            <h6>{props.selectedArtist.reviews}</h6>
+            <h6>{selectedArtist?.reviews}</h6>
 
             <div className="ap-info">
               <div style={{ width: "60%", fontSize: 24, fontWeight: 700 }}>
@@ -566,13 +604,13 @@ export default function ArtistProfile(props) {
                   <div>
                     <span className="pi pi-home">
                       {" "}
-                      {props.selectedArtist.location}{" "}
+                      {selectedArtist?.Location}{" "}
                     </span>
                   </div>
                   <div>
                     <span className="pi pi-tag">
                       {" "}
-                      {props.selectedArtist.category}
+                      {selectedArtist?.Category}
                     </span>
                   </div>
                 </div>
@@ -580,13 +618,13 @@ export default function ArtistProfile(props) {
                   <div>
                     <span className="pi pi-money-bill">
                       {" ₹"}
-                      {props.selectedArtist.price}
+                      {selectedArtist?.Price}
                     </span>
                   </div>
                   <div>
                     <span className="pi pi-globe">
                       {" "}
-                      {props.selectedArtist.experience}
+                      {selectedArtist?.Experience}
                     </span>
                   </div>
                 </div>
@@ -652,59 +690,7 @@ export default function ArtistProfile(props) {
         <div className="ap-profileBody" id="genre">
           <h3 className="heading-search"> Media Gallery</h3>
           <div className="ap-fixedDivHeight ap-profileBody-video" id="vid">
-            {/* <div className="ap-individual-vid-card">
-            <iframe
-              className="ap-video-iframe"
-              width="266"
-              height="150"
-              src="https://www.youtube.com/embed/kgkWUCket68"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div className="ap-individual-vid-card">
-            <iframe
-              className="ap-video-iframe"
-              width="266"
-              height="150"
-              src="https://www.youtube.com/embed/W6E1A-YCfAk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div className="ap-individual-vid-card">
-            <iframe
-              className="ap-video-iframe"
-              width="266"
-              height="150"
-              src="https://www.youtube.com/embed/kgkWUCket68"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div className="ap-individual-vid-card">
-            <iframe
-              className="ap-video-iframe"
-              width="266"
-              height="150"
-              src="https://www.youtube.com/embed/W6E1A-YCfAk"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div> */}
-
-            {vidArray.map((e) => {
+            {/* {vidArray.map((e) => {
               return (
                 <div className="ap-individual-vid-card">
                   <iframe
@@ -719,14 +705,26 @@ export default function ArtistProfile(props) {
                   ></iframe>
                 </div>
               );
-            })}
+            })} */}
+            <div className="ap-individual-vid-card">
+              <iframe
+                className="ap-video-iframe"
+                width="266"
+                height="150"
+                src={selectedArtist?.Youtube}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
           <hr />
           <div className="ap-fixedDivHeight ap-profileBody-details" id="bio">
             <h3 className="heading-search"> Artist Bio</h3>
             <p className="ap-details-bio">
               <br />
-              {props.selectedArtist.bio}
+              {selectedArtist?.Bio}
 
               <br />
               <br />
@@ -739,21 +737,26 @@ export default function ArtistProfile(props) {
             <h3 className="heading-search"> Genre</h3>
             <br />
             <Carousel className="ap-genreCrousel">
-              {props.selectedArtist.genre.map((eG) => (
-                <Carousel.Item>
+              {selectedArtist?.GenresPerformed?.map((eG) => (
+                <Carousel.Item key={eG}>
+                  {" "}
+                  {/* Add a unique key for each Carousel.Item */}
                   <div className="ap-profileBody-photos">
                     <Card style={{ width: "15rem" }}>
                       <Card.Body>
-                        <Card.Title style={{ fontSize: 23 }}>{eG}</Card.Title>
-                        {/* <Card.Title>---</Card.Title>
-                      <Card.Title>{genreFile[eG]}</Card.Title> */}
-                        {/* {dataFile.genreDescription.map((f) => (
-                        {}</Card.Text>100
-                      ))} */}
+                        <Card.Title style={{ fontSize: 23 }}>
+                          Genres Performed:
+                        </Card.Title>
+                        <Card.Text>
+                          {eG.split(", ").map((GenresPerformed, index) => (
+                            <span key={index}>
+                              {GenresPerformed}
+                              {index < eG.split(", ").length - 1 && ", "}
+                            </span>
+                          ))}
+                        </Card.Text>
                       </Card.Body>
                     </Card>
-                    {/* 
-                  <p style={{ maxWidth: 400 }}></p> */}
                   </div>
                 </Carousel.Item>
               ))}
